@@ -85,52 +85,41 @@ body {
         color: #231F77;
     }
 
-/*Overlays*/
-    .overlay {
+/*Links*/
+    .linkoverlay {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 0.5vw;
-        row-gap: 0.5vw;
+        column-gap: 1.5vw;
+        row-gap: 1.5vw;
         width: 80%;
         position: absolute;
         left: 10%;
-        z-index: 1;
+        z-index: 2;
+        padding-bottom: 10vh;
+    }
+
+    .linkbox {
+        width: 25.6vw;
+        height: 25.6vw;
     }
 
     .link {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
+        width: 25.6vw;
+        height: 25.6vw;
+        margin: auto;
     }  
 
-    h3 {
-        color: white;
-        text-align: center;
-        margin-top: 42%;
-        font-size: 1.7vw;
-    }
-
-    .imageoverlay {
-        width: 26.4vw;
-        height: 26.4vw;
-        background-color:#231F77;
-        transition: 0.5s;
-        opacity: 0;
-    }
-
-    .imageoverlay:hover {
-        opacity: 0.8;
+    .link:hover {
+        background-color: #231F77;
+        opacity: .4;
     }
 
 /*Main body*/
     .projects {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 0.5vw;
-        row-gap: 0.5vw;
+        column-gap: 1.5vw;
+        row-gap: 1.5vw;
         width: 80%;
         position: absolute;
         left: 10%;
@@ -139,14 +128,14 @@ body {
     }
 
     .imagebox {
-        width: 26.4vw;
-        height: 26.4vw;
+        width: 25.6vw;
+        height: 25.6vw;
         background-color: #DCFBA8;
     }
 
     .imagebox img {
-        width: 26.4vw;
-        height: 26.4vw;
+        width: 25.6vw;
+        height: 25.6vw;
         object-fit: cover;
     }
 
