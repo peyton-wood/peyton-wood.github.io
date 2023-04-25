@@ -107,11 +107,13 @@ body {
         width: 25.6vw;
         height: 25.6vw;
         margin: auto;
-    }  
+        opacity: 0;
+    }
 
     .link:hover {
         background-color: #231F77;
         opacity: .4;
+        mix-blend-mode: multiply;
     }
 
 /*Main body*/
