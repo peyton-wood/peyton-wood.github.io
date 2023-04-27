@@ -101,6 +101,11 @@ body {
         line-height: 1.6;
     }
 
+    .subheading {
+        font-weight: 400;
+        font-size: .9vw;
+    }
+
 /*Photo Grid*/
     .photogrid1 {
         display: grid;
