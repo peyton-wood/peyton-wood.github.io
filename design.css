@@ -22,20 +22,18 @@ body {
 /*Header, nav, and intro*/
     header {
         width: 100%;
-        background-color: #DCFBA8;
-        height: 6vw;
+        background-color: #000000;
+        height: 5vw;
         position: relative;
         top: 0px;
         position: relative;
-        border-bottom: solid #231F77;
     }
 
     h2 {
         position: absolute;
         padding-left: 9vw;
-        font-size: 2vw;
-        color: #231F77;
-        top: -0.3vw;
+        font-size: 1.7vw;
+        color: #ffffff;
     }
 
     nav {
@@ -48,21 +46,26 @@ body {
     a {
         float: right;
         margin-right: 4vw;
-        font-size: 1.1vw;
+        font-size: 1vw;
     }
 
     a:link {
-        color: #231F77;
+        color: #ffffff;
         text-decoration: none;
     }
 
     a:hover {
-        color: #4038dd;
+        color:#8782F6;
+        text-decoration: none;
+    }
+
+    a:visited:hover {
+        color:#8782F6;
         text-decoration: none;
     }
 
     a:visited {
-        color: #231F77;
+        color: white;
         text-decoration: none;
     }
 
@@ -82,69 +85,67 @@ body {
 
     p {
         font-size: 1.1vw;
-        color: #231F77;
+        color: #000000;
     }
 
 /*Links*/
     .linkoverlay {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1.5vw;
-        row-gap: 1.5vw;
+        display: flexbox;
+        justify-content: center;
+        flex-direction: row;
         width: 80%;
-        position: absolute;
-        left: 10%;
-        z-index: 2;
         padding-bottom: 10vh;
+        position: absolute;
+        z-index: 1;
+        left: 10%;
     }
 
     .linkbox {
-        width: 25.6vw;
-        height: 25.6vw;
+        width: 26vw;
+        height: 26vw;
+        float: left;
     }
 
     .link {
-        width: 25.6vw;
-        height: 25.6vw;
+        width: 26vw;
+        height: 26vw;
         margin: auto;
         opacity: 0;
     }
 
     .link:hover {
-        background-color: #231F77;
-        opacity: .4;
+        background-color:#8782F6;
+        opacity: .6;
         mix-blend-mode: multiply;
     }
 
 /*Main body*/
     .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1.5vw;
-        row-gap: 1.5vw;
+        display: flexbox;
+        justify-content: center;
+        flex-direction: row;
         width: 80%;
-        position: absolute;
-        left: 10%;
-        z-index: 0;
+        margin:auto;
         padding-bottom: 10vh;
     }
 
     .imagebox {
-        width: 25.6vw;
-        height: 25.6vw;
+        width: 26vw;
+        height: 26vw;
         background-color: #DCFBA8;
+        float: left;
     }
 
     .imagebox img {
-        width: 25.6vw;
-        height: 25.6vw;
+        width: 26vw;
+        height: 26vw;
         object-fit: cover;
     }
 
 footer {
     text-align: center;
     width: 100%;
-    background-color: #231F77;
+    background-color: #000000;
     color: white;
     position: absolute;
     bottom: 0;
