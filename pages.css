@@ -201,6 +201,7 @@ body {
     footer {
         text-align: center;
         width: 100%;
+        font-weight: 300;
         background-color: #000000;
         color: white;
         position: absolute;
