@@ -106,6 +106,7 @@ body {
         width: 26vw;
         height: 26vw;
         float: left;
+        margin: 2px;
     }
 
     .link {
