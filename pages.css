@@ -153,9 +153,10 @@ body {
     h5 {
         font-size: 1.5vw;
         line-height: 0%;
-        color:#8782F6;
+        color:black;
         font-weight: 700;
         margin-bottom: 3%;
+        font-family: 'Syne', sans-serif;
     }
 
     .textrow2 {
@@ -212,3 +213,58 @@ body {
         position: absolute;
         bottom: 0;
     }
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 2.7vw;
+    }
+
+    a {
+        font-size: 1.7vw;
+        padding-top: 1%;
+    }
+
+    h6 {
+        font-size: 2vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 1.7vw;
+    }
+
+    .subheading {
+        font-size: 1.5vw;
+    }
+
+    h5 {
+        font-size: 2vw;
+    }
+
+    .textrow1 {
+        width: 80%;
+        float: left;
+        padding-left: 10%;
+    }
+
+    .textrow2 {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .photogrid1 {
+        display: block;
+    }
+
+    .photogrid2 {
+        display: block;
+    }
+
+    .photogrid3 {
+        display: block;
+    }
+}

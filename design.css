@@ -128,7 +128,7 @@ body {
         justify-content: center;
         flex-direction: row;
         width: 80%;
-        margin:auto;
+        margin: auto;
         padding-bottom: 10vh;
     }
 
@@ -152,4 +152,110 @@ footer {
     color: white;
     position: absolute;
     bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.7vw;
+        padding-top: 0.5%;
+    }
+
+    a {
+        font-size: 1.2vw;
+    }
+    
+    .intro {
+        width: 60%;
+    }
+    
+    h1 {
+        font-size: 3.7vw;
+    }
+
+    p{
+        font-size: 1.7vw;
+    }
+    
+    .linkoverlay {
+        width: 80%;
+        left: 10%;
+    }
+
+    .linkbox {
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .link {
+        width: 38vw;
+        height: 38vw;
+    }
+    
+    .projects {
+        width: 80%;
+    }
+
+    .imagebox {
+        width: 38vw;
+        height: 38vw;
+    }
+
+    .imagebox img {
+        width: 38vw;
+        height: 38vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 3vw;
+        padding-top: 0%;
+    }
+
+    a {
+        font-size: 2vw;
+        padding-top: 2%;
+    }
+    
+    .intro {
+        width: 60%;
+        padding-top: 4%;
+    }
+    
+    h1 {
+        font-size: 4vw;
+    }
+
+    p{
+        font-size: 2.5vw;
+    }
+    
+    .linkoverlay {
+        width: 80%;
+        left: 10%;
+    }
+
+    .linkbox {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .link {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .projects {
+        width: 80%;
+    }
+
+    .imagebox {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .imagebox img {
+        width: 80vw;
+        height: 80vw;
+    }
 }
