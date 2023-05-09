@@ -26,21 +26,22 @@ body {
         height: 5vw;
         position: relative;
         top: 0px;
-        position: relative;
+        display: inline-block;
     }
 
-    h2 {
+    h2 a{
         position: absolute;
         padding-left: 10vw;
-        font-size: 1.7vw;
+        font-size: 1.9vw;
         color:black;
+        float: left;
     }
 
     nav {
         padding-right: 7vw;
         position: absolute;
         right: 0px;
-        top: 2.1vw;
+        top: 1.9vw;
     }
 
     a {
