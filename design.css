@@ -3,260 +3,215 @@
 }
 
 body {
-    width: 100%;
+    width: 85vw;
     margin: auto;
-    padding-bottom: 4vw;
-    overflow-x: hidden;
-    background-color:white;
-}
-
-.full-page {
     position: relative;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 17vh;
+}
+
+h3 {
+    width: 70%;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    width: 30%;
+    display: flex;
+}
+
+h4 {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: right;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8782F6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited:hover {
+    color:#8782F6;
+    text-decoration: none;
+}
+
+.fullpage {
+    display: flex;
     width: 100%;
 }
 
-.content {
-    margin-bottom: 10vh;
-    width: 100%;
+.intro {
+    width: 28vw;
 }
 
-/*Header, nav, and intro*/
-    header {
-        width: 100%;
-        height: 5vw;
-        position: relative;
-        top: 0px;
-        display: inline-block;
+h1 {
+    font-size: 55px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 20px;
+    width: 82%;
+}
+
+.linkoverlay {
+    width: 57vw;
+    display: flexbox;
+    position: absolute;
+    z-index: 1;
+    left: 28vw;
+    top: 17vh;
+}
+
+.link {
+    width: 18.1vw;
+    height: 18.1vw;
+    opacity: 0;
+    border-radius: 50%;
+    margin: 0.25vw;
+    float: left;
+    border-width: 0.2vw;
+    border-color: black;
+    border-style: solid;
+}
+
+.link:hover {
+    background-color: #8782F6;
+    opacity: 0.8;
+    mix-blend-mode: hue;
+    border-width: 0.2vw;
+    border-color: black;
+    border-style: solid;
+}
+
+.projects {
+    width: 57vw;
+    display: flexbox;
+}
+
+.imagebox img {
+    width: 18.1vw;
+    height: 18.1vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0.25vw;
+    float: left;
+    border-width: 0.2vw;
+    border-color: black;
+    border-style: solid;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    h3 {
+        font-size: 18px;
     }
 
-    h2 a{
-        position: absolute;
-        padding-left: 10vw;
-        font-size: 1.9vw;
-        color:black;
-        float: left;
+    h4 {
+        font-size: 16px;
     }
-
-    nav {
-        padding-right: 7vw;
-        position: absolute;
-        right: 0px;
-        top: 1.9vw;
-    }
-
-    a {
-        float: right;
-        margin-right: 4vw;
-        font-size: 1vw;
-    }
-
-    a:link {
-        color: black;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color:#8782F6;
-        text-decoration: none;
-    }
-
-    a:visited:hover {
-        color:#8782F6;
-        text-decoration: none;
-    }
-
-    a:visited {
-        color: black;
-        text-decoration: none;
-    }
-
-    .intro {
-        text-align: center;
-        width: 30%;
-        margin: auto;
-        padding-bottom: 3%;
-        padding-top: 2%;
-    }
-
+    
     h1 {
-        color: black;
-        font-size: 3vw;
-        font-weight: 700;
-        font-family: 'Syne', sans-serif;
-        margin-bottom: -2%;
+        font-size: 32px;
     }
 
     p {
-        font-size: 1.1vw;
-        color: #000000;
+        font-size: 16px;
     }
 
-/*Links*/
-    .linkoverlay {
-        display: flexbox;
-        justify-content: center;
-        flex-direction: row;
-        width: 80%;
-        padding-bottom: 10vh;
-        position: absolute;
-        z-index: 1;
-        left: 10%;
-    }
-
-    .linkbox {
-        width: 26vw;
-        height: 26vw;
-        float: left;
-        margin: 2px;
-    }
-
-    .link {
-        width: 26vw;
-        height: 26vw;
-        margin: auto;
-        opacity: 0;
-    }
-
-    .link:hover {
-        background-color: white;
-        opacity: .4;
-        mix-blend-mode: multiply;
-    }
-
-/*Main body*/
-    .projects {
-        display: flexbox;
-        justify-content: center;
-        flex-direction: row;
-        width: 80%;
-        margin: auto;
-        padding-bottom: 10vh;
-    }
-
-    .imagebox {
-        width: 26vw;
-        height: 26vw;
-        float: left;
-        margin: 2px;
-    }
-
-    .imagebox img {
-        width: 26vw;
-        height: 26vw;
-        object-fit: cover;
-    }
-
-footer {
-    text-align: center;
-    width: 100%;
-    background-color: #000000;
-    color: white;
-    position: absolute;
-    bottom: 0;
 }
 
-@media only screen and (max-width: 768px) {
-    h2 {
-        font-size: 1.7vw;
-        padding-top: 0.5%;
+@media only screen and (max-width: 800px) {
+
+    body {
+        width: 100vw;
     }
 
-    a {
-        font-size: 1.2vw;
+    header {
+        width: 80vw;
+        display: flex;
+        height: 60px;
+        margin: auto;
     }
-    
-    .intro {
+
+    h3 {
+        font-size: 14px;
+        width: 40%;
+    }
+
+    nav {
         width: 60%;
     }
-    
-    h1 {
-        font-size: 3.7vw;
+
+    h4 {
+        font-size: 12px;
     }
 
-    p{
-        font-size: 1.7vw;
+    .fullpage {
+        display: inline;
+        width: 80vw;
+        margin: auto;
     }
-    
-    .linkoverlay {
+
+    .intro {
         width: 80%;
-        left: 10%;
+        margin: auto;
+        height: 200px;
     }
 
-    .linkbox {
-        width: 38vw;
-        height: 38vw;
+    h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .linkoverlay {
+        width: 70%;
+        margin: auto;
+        top: 286.8px;
+        left: 15%;
     }
 
     .link {
-        width: 38vw;
-        height: 38vw;
-    }
-    
-    .projects {
-        width: 80%;
+        width: 70vw;
+        height: 70vw;
+        border-width: 0.5vw;
+        margin: 1vw;
     }
 
-    .imagebox {
-        width: 38vw;
-        height: 38vw;
+    .projects {
+        width: 70%;
+        margin: auto;
     }
 
     .imagebox img {
-        width: 38vw;
-        height: 38vw;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    h2 {
-        font-size: 3vw;
-        padding-top: 0%;
-    }
-
-    a {
-        font-size: 2vw;
-        padding-top: 2%;
-    }
-    
-    .intro {
-        width: 60%;
-        padding-top: 4%;
-    }
-    
-    h1 {
-        font-size: 4vw;
-    }
-
-    p{
-        font-size: 2.5vw;
-    }
-    
-    .linkoverlay {
-        width: 80%;
-        left: 10%;
-    }
-
-    .linkbox {
-        width: 80vw;
-        height: 80vw;
-    }
-
-    .link {
-        width: 80vw;
-        height: 80vw;
-    }
-    
-    .projects {
-        width: 80%;
-    }
-
-    .imagebox {
-        width: 80vw;
-        height: 80vw;
-    }
-
-    .imagebox img {
-        width: 80vw;
-        height: 80vw;
+        width: 70vw;
+        height: 70vw;
+        border-width: 0.5vw;
+        margin: 1vw;
     }
 }
