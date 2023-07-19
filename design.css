@@ -61,6 +61,7 @@ a:visited:hover {
 
 .intro {
     width: 28vw;
+    
 }
 
 h1 {
@@ -76,11 +77,12 @@ p {
 
 .linkoverlay {
     width: 57vw;
-    display: flexbox;
+    display: flex;
     position: absolute;
     z-index: 1;
     left: 28vw;
     top: 17vh;
+    flex-wrap: wrap;
 }
 
 .link {
@@ -106,7 +108,10 @@ p {
 
 .projects {
     width: 57vw;
-    display: flexbox;
+    display: flex;
+    float: left;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .imagebox img {
@@ -145,38 +150,37 @@ p {
 
     body {
         width: 100vw;
+        overflow: auto;
     }
 
     header {
         width: 80vw;
         display: flex;
-        height: 60px;
         margin: auto;
+        height: auto;
     }
 
     h3 {
-        font-size: 14px;
-        width: 40%;
+        font-size: 12px;
+        width: 30%;
     }
 
     nav {
-        width: 60%;
+        width: 70%;
     }
 
     h4 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .fullpage {
         display: inline;
-        width: 80vw;
         margin: auto;
     }
 
     .intro {
         width: 80%;
         margin: auto;
-        height: 200px;
     }
 
     h1 {
@@ -189,26 +193,31 @@ p {
         width: 100%;
     }
 
-    .linkoverlay {
-        width: 70%;
+    .projects {
+        width: 70vw;
         margin: auto;
-        top: 286.8px;
-        left: 15%;
+        height: 100%;
+        display: inline;
+        position: relative;
+        left: 15vw;
     }
 
-    .link {
+    .imagebox img {
         width: 70vw;
         height: 70vw;
         border-width: 0.5vw;
         margin: 1vw;
     }
 
-    .projects {
-        width: 70%;
+    .linkoverlay {
+        width: 70vw;
         margin: auto;
+        top: 0;
+        left: 0;
+        display: inline;
     }
 
-    .imagebox img {
+    .link {
         width: 70vw;
         height: 70vw;
         border-width: 0.5vw;
