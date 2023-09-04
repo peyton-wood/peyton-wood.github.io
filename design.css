@@ -92,18 +92,12 @@ p {
     border-radius: 50%;
     margin: 0.25vw;
     float: left;
-    border-width: 0.2vw;
-    border-color: black;
-    border-style: solid;
 }
 
 .link:hover {
     background-color: #8782F6;
     opacity: 0.8;
     mix-blend-mode: hue;
-    border-width: 0.2vw;
-    border-color: black;
-    border-style: solid;
 }
 
 .projects {
@@ -121,9 +115,6 @@ p {
     border-radius: 50%;
     margin: 0.25vw;
     float: left;
-    border-width: 0.2vw;
-    border-color: black;
-    border-style: solid;
 }
 
 @media only screen and (max-width: 1000px) {
