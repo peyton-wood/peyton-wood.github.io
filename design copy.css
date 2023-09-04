@@ -65,7 +65,6 @@ a:visited:hover {
 
 .intro {
     width: 28vw;
-    
 }
 
 h1 {
@@ -81,31 +80,6 @@ p {
 
 /** Main projects and links **/
 
-.linkoverlay {
-    width: 57vw;
-    display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 28vw;
-    top: 17vh;
-    flex-wrap: wrap;
-}
-
-.link {
-    width: 18.1vw;
-    height: 18.1vw;
-    opacity: 0;
-    border-radius: 10%;
-    margin: 0.25vw;
-    float: left;
-}
-
-.link:hover {
-    background-color: #8782F6;
-    opacity: 0.8;
-    mix-blend-mode: hue;
-}
-
 .projects {
     width: 57vw;
     display: flex;
@@ -115,12 +89,15 @@ p {
 }
 
 .imagebox img {
-    width: 18.1vw;
-    height: 18.1vw;
+    width: 17vw;
+    height: 17vw;
     object-fit: cover;
-    border-radius: 10%;
-    margin: 0.25vw;
+    margin: 1vw;
     float: left;
+}
+
+.imagebox img:hover {
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -202,22 +179,6 @@ p {
     .imagebox img {
         width: 70vw;
         height: 70vw;
-        border-width: 0.5vw;
-        margin: 1vw;
-    }
-
-    .linkoverlay {
-        width: 70vw;
-        margin: auto;
-        top: 0;
-        left: 0;
-        display: inline;
-    }
-
-    .link {
-        width: 70vw;
-        height: 70vw;
-        border-width: 0.5vw;
         margin: 1vw;
     }
 }
