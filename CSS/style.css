@@ -1,0 +1,1117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+/* clearfix */
+.clearfix {
+    clear: both;
+}
+
+
+
+/* header applies to all pages */
+/* header */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+/* name */
+header .name {
+    width: 47.5%;
+    float: left;
+    padding-left: 2.5%
+}
+
+header .name h3 a {
+    font-weight: 100; 
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 0.5em;
+    text-decoration: none;
+    color: black;
+}
+
+/* nav */
+header nav {
+    width: 47.5%;
+    float: right;
+    padding-right: 2.5%;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    float: right;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 0 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* hamburger menu */
+.mobile-nav {
+    display: none;
+}
+
+
+
+
+/* main  */
+main {
+    width: 100%;
+    padding: 10px;
+}
+
+/* index */
+
+/* intro */
+.intro {
+    width: 100%;
+    /* height: 100vh; */
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* intro-text */
+.intro .intro-text {
+    padding: 0 10px 0 20px;
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+}
+
+.intro .intro-text h1 {
+    font-family: 'DM Serif Display';
+    font-size: 6.5vw;
+    font-weight: 100;
+    line-height: 0.3em;
+}
+
+.intro .intro-text p {
+    font-size: 20px;
+    width: 70%;
+}
+
+.intro .intro-text .button {
+    padding-top: 20px;
+}
+
+/* button is used on all pages */
+/* button */
+.button {
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.button a {
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0 black;
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(225, 239, 250);
+}
+
+.button a:hover {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+/* intro image
+.intro .intro-img {
+    width: 50%;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    padding: 0 0 0 10px;
+} */
+
+.seemore p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 6px;
+}
+
+.seemore .arrow{
+    font-size: 20px;
+}
+
+/* UI/UX Design */
+#ui-design {
+    width: 95%;
+    height: 50vh;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+#ui-design .ui-design-content {
+    padding-top: 3%;
+}
+
+#ui-design .ui-design-content h2 {
+    font-weight: 200;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+#ui-design .ui-design-content .ui-column {
+    width: 33.3%;
+    padding: 0 10px;
+    float: left;
+}
+
+#ui-design .ui-design-content .ui-column .ui-image {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+}
+
+#ui-design .ui-design-content .ui-column .ui-image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#ui-design .ui-design-content .ui-column .ui-text {
+    padding-top: 10px;
+}
+
+#ui-design .ui-design-content .ui-column .ui-text h4 {
+    font-weight: 200;
+}
+
+#ui-design .ui-design-content .ui-column .ui-text p {
+    width: 75%;
+}
+
+/* Graphic Design */
+#graphic-design {
+    width: 95%;
+    height: 70vh;
+    padding: 0 10px;
+    margin: 0 auto 10% auto;
+}
+
+#graphic-design .gd-content {
+    padding-top: 8%;
+}
+
+#graphic-design .gd-content h2 {
+    font-weight: 200;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+#graphic-design .gd-content .gd-column {
+    width: 25%;
+    padding: 0 10px;
+    float: left;
+}
+
+#graphic-design .gd-content .gd-column .gd-image {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+}
+
+#graphic-design .gd-content .gd-column .gd-image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#graphic-design .gd-content .gd-column .gd-text {
+    padding-top: 10px;
+}
+
+#graphic-design .gd-content .gd-column .gd-text h4 {
+    font-weight: 200;
+}
+
+#graphic-design .gd-content .gd-column .gd-text p {
+    width: 70%;
+}
+
+
+
+
+/* project pages */
+
+/* intro */
+.project-intro {
+    width: 95%;
+    height: 75vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+/* intro-text */
+.project-intro .intro-text {
+    padding: 0 10px 0 20px;
+    width: 50%;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.project-intro .intro-text h1 {
+    font-family: 'DM Serif Display';
+    font-size: 6.5vw;
+    font-weight: 100;
+    line-height: 0.3em;
+}
+
+.project-intro .intro-text p {
+    font-size: 20px;
+    width: 80%;
+}
+
+/* role table */
+.project-intro .intro-text table td {
+    font-size: 16px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+/* intro image */
+.project-intro .intro-img {
+    width: 50%;
+    padding: 0 0 0 10px;
+}
+
+.project-intro .intro-img img {
+    width: 100%;
+    height: 80vh;
+    object-fit: contain;
+}
+
+/* project content */
+
+/* section heading */
+
+main .project {
+    width: 95%;
+    margin: auto;
+}
+
+main .project h2 {
+    font-weight: 200;
+    width: 99%;
+    padding: 10px 0px 10px 0px;
+    margin: 40px 0 40px 0px;
+    font-size: 18px;
+    text-align: center;
+}
+
+main .project ul li {
+    line-height: 2em;
+    font-size: 16px;
+}
+
+/* project images */
+
+/* left image */
+main .project .image-left {
+    height: 50vh;
+    width: 58.5%;
+    margin: 10px 10px 20px 10px;
+    /* background-color: grey; */
+    float: left;
+}
+
+main .project .image-left img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* right image */
+main .project .image-right {
+    height: 50vh;
+    width: 58.5%;
+    margin: 10px 10px 20px 10px;
+    /* background-color: grey; */
+    float: right;
+}
+
+main .project .image-right img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* split images */
+main .project .image-left-half {
+    height: 50vh;
+    width: 48.5%;
+    margin: 10px 10px 20px 10px;
+    /* background-color: grey; */
+    float: left;
+}
+
+main .project .image-left-half img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+main .project .image-right-half {
+    height: 50vh;
+    width: 48.5%;
+    margin: 10px 10px 20px 10px;
+    /* background-color: grey; */
+    float: right;
+}
+
+main .project .image-right-half img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* video */
+main .project .video-right {
+    height: 50vh;
+    width: 38.5%;
+    margin: 10px 10px 20px 10px;
+    float: right;
+}
+
+main .project .video-right video {
+    object-fit: cover;
+    height: 50vh;
+    width: 100%;
+}
+
+/* project text */
+/* left text */
+main .project .text-left {
+    height: auto;
+    width: 38.5%;
+    margin: 10px 10px 20px 10px;
+    float: left;
+}
+
+main .project .text-left h4 {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .project .text-left p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* right text */
+main .project .text-right {
+    height: auto;
+    width: 38.5%;
+    margin: 10px 10px 20px 10px;
+    float: right;
+}
+
+main .project .text-right h4 {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .project .text-right p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/* split text */
+main .project .text-left-half {
+    height: auto;
+    width: 48.5%;
+    margin: 10px 10px 20px 10px;
+    float: left;
+}
+main .project .text-left-half h4 {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .project .text-left-half p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+main .project .text-right-half {
+    height: auto;
+    width: 48.5%;
+    margin: 10px 10px 20px 10px;
+    float: right;
+}
+main .project .text-right-half h4 {
+    font-weight: 200;
+    font-size: 16px;
+}
+
+main .project .text-right-half p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+
+/* about page */
+
+/* intro */
+/* intro */
+.about-intro {
+    width: 95%;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+/* intro-text */
+.about-intro .about-intro-text {
+    padding: 0 10px 0 20px;
+    width: 80%;
+    height: fit-content;
+    margin: auto 0;
+}
+
+.about-intro .about-intro-text h1 {
+    font-family: 'DM Serif Display';
+    font-size: 6.5vw;
+    font-weight: 100;
+    line-height: 0.3em;
+}
+
+.about-intro .about-intro-text p {
+    font-size: 20px;
+    width: 70%;
+}
+
+.about-intro .about-intro-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-intro .about-intro-text a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.about-intro .about-intro-text a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.about-intro .about-intro-text .button {
+    float: left;
+    margin: 20px 20px 0 0;
+}
+
+.about-intro .about-intro-text .button a {
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 0 black;
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(225, 239, 250);
+}
+
+.about-intro .about-intro-text .button a:hover {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.about-intro .about-image {
+    width: 20%;
+    float: right;
+    height: 40vh;
+    margin: auto 0px;
+}
+
+.about-intro .about-image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+
+
+/* footer applies to all pages */
+/* footer */
+footer p {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+/* Tablet media query */
+@media only screen and (max-width:1024px) {
+    /* header */
+    header nav {
+        display: none;
+    }
+
+    header .mobile-nav {
+        display: block;
+        width: 50%;
+        float: right;
+    }
+
+    header .mobile-nav #hamburger-menu {
+        float: right;
+        padding-right: 30px;
+        padding-top: 25px;
+    }
+
+    header .mobile-nav-links {
+        width: 100%;
+    }
+
+    header .mobile-nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 30px 10px 0;
+        text-align: right;
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    /* index */
+    /* intro */
+    .intro {
+        height: 30vh;
+        margin-top: 10vh;
+    }
+
+    /* intro-text */
+    .intro .intro-text {
+        width: 100%;
+    }
+
+    .intro .intro-text h1 {
+        font-size: 9vw;
+    }
+
+    .intro .intro-text p {
+        font-size: 18px;
+        width: 70%;
+    }
+
+    /* socials */
+    .intro-text a i {
+        display: none;
+    }
+
+    /* intro image */
+    .intro .intro-img {
+        display: none;
+    }
+
+    /* intro buttons */
+    .intro .button {
+        display: none;
+    }
+
+    .seemore {
+        display: none;
+    }
+
+    /* UI/UX Design */
+    #ui-design .ui-design-content .ui-column {
+        width: 100%;
+        padding: 0 10px;
+        float: none;
+        height: 65vh;
+    }
+
+    #ui-design .ui-design-content .ui-column .ui-text h4 {
+        font-size: 18px;
+    }
+
+    #ui-design .ui-design-content .ui-column .ui-text p {
+        font-size: 18px;
+    }
+
+    /* Graphic Design */
+    #graphic-design .gd-content .gd-column {
+        width: 100%;
+        padding: 0 10px;
+        float: none;
+        height: 65vh;
+    }
+
+    #graphic-design .gd-content .gd-column .gd-text h4 {
+        font-size: 18px;
+    }
+
+    #graphic-design .gd-content .gd-column .gd-text p {
+        font-size: 18px;
+    }
+
+
+
+    /* project pages */
+    .project-intro {
+        width: 95%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .project-intro .intro-text {
+        width: 100%;
+    }
+
+    main .project-intro .intro-img {
+        display: none;
+    }
+
+    main .project-intro .intro-img img {
+        display: none;
+    }
+
+    .project h2 {
+        width: 98%;
+    }
+
+    /* project images */
+    main .project .image-left{
+        width: 100%;
+        float: none;
+        height: 45vh;
+        margin: 10px 0px;
+    }
+
+    main .project .image-left img{
+        height: 45vh;
+        object-fit: cover;
+    }
+
+    main .project .image-right{
+        margin: 10px 0px;
+        width: 100%;
+        float: none;
+        height: 45vh;
+    }
+
+    main .project .image-right img{
+        height: 45vh;
+        object-fit: cover;
+    }
+
+    /* split images */
+
+    main .project .image-left-half{
+        width: 100%;
+        float: none;
+        height: 45vh;
+        margin: 10px 0px;
+    }
+
+    main .project .image-left-half img{
+        height: 45vh;
+        object-fit: cover;
+    }
+
+    main .project .image-right-half{
+        width: 100%;
+        float: none;
+        height: 45vh;
+        margin: 40px 0px;
+    }
+
+    main .project .image-right-half img{
+        height: 45vh;
+        object-fit: cover;
+    }
+
+    /* video */
+    main .project .video-right {
+        height: 60vh;
+        width: 100%;
+        margin: 10px 10px 20px 10px;
+        float: right;
+    }
+    
+    main .project .video-right video {
+        object-fit: cover;
+        height: 60vh;
+        width: 100%;
+    }
+
+    /* project text */
+    main .project .text-left{ 
+        width: 98%;
+        float: none;
+        height: auto;
+        margin: 40px 10px;
+    }
+
+    main .project .text-right{ 
+        width: 98%;
+        float: none;
+        height: fit-content;
+        margin: 40px 10px;
+    }
+
+    main .project .text-left-half{ 
+        width: 98%;
+        float: none;
+        height: auto;
+        margin: 40px 10px;
+    }
+
+    main .project .text-right-half{ 
+        width: 98%;
+        float: none;
+        height: fit-content;
+        margin: 40px 10px;
+    }
+
+
+
+    /* about page */
+    .about-intro {
+        height: 45vh;
+        margin-top: 30px;
+    }
+
+
+    .about-intro .about-image img {
+        display: none;
+    }
+
+    .about-intro .about-intro-text {
+        width: 100%;
+    }
+
+    .about-intro .about-intro-text p {
+        width: 100%;
+    }
+
+    /* contact form */
+    .contact-form form {
+        width: 100%;
+    }
+}
+
+
+
+
+/* Phone media query */
+@media only screen and (max-width:768px) {
+
+    /* header */
+    header .mobile-nav #hamburger-menu {
+        padding-top: 28px;
+    }
+
+    header .name h3 {
+        font-size: 16px;
+    }
+    
+    /* index page */
+    .intro {
+        height: 20vh;
+        margin-bottom: 4%;
+    }
+
+    .button a {
+        font-size: 14px;
+    }
+
+    /* intro-text */
+
+    .intro .intro-text h1 {
+        font-size: 10vw;
+    }
+
+    .intro .intro-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* UI/UX Design */
+    #ui-design .ui-design-content .ui-column {
+        padding: 10px 10px;
+        height: 55vh;
+    }
+
+    #ui-design .ui-design-content h2 {
+        font-size: 16px;
+    }
+
+    #ui-design .ui-design-content .ui-column .ui-text h4 {
+        font-size: 16px;
+    }
+
+    #ui-design .ui-design-content .ui-column .ui-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #ui-design .ui-design-content .ui-column .ui-image {
+        height: 30vh;
+    }
+
+    #ui-design .ui-design-content .ui-column .ui-image img {
+        height: 30vh;
+    }
+
+    /* Graphic Design */
+    #graphic-design .gd-content {
+        margin-top: 40px;
+    }
+
+    #graphic-design .gd-content h2 {
+        font-size: 16px;
+    }
+
+    #graphic-design .gd-content .gd-column {
+        padding: 10px 10px;
+        height: 55vh;
+    }
+
+    #graphic-design .gd-content .gd-column .gd-image {
+        height: 30vh;
+    }
+
+    #graphic-design .gd-content .gd-column .gd-image img {
+        height: 30vh;
+    }
+
+    #graphic-design .gd-content .gd-column .gd-text h4 {
+        font-size: 16px;
+    }
+
+    #graphic-design .gd-content .gd-column .gd-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+
+
+    /* project pages */
+    .project-intro {
+        height: fit-content;
+        padding-top: 70px;
+        padding-bottom: 20px;
+    }
+
+    main .project-intro .intro-text {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    main .project-intro .intro-text h1 {
+        font-size: 10vw;
+    }
+
+    main .project-intro .intro-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    main .project-intro .intro-text table {
+        width: 100%;
+    }
+
+    main .project-intro .intro-text table tr td {
+        font-size: 14px;
+    }
+
+    main .project h2 {
+        width: 100%;
+        font-size: 16px;
+        margin-left: 0;
+    }
+
+    /* project images */
+    main .project .image-left{
+        width: 98%;
+        float: none;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    main .project .image-left img{
+        height: fit-content;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    main .project .image-right{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    main .project .image-right img{
+        height: fit-content;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    /* split images */
+    main .project .image-left-half{
+        width: 98%;
+        float: none;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    main .project .image-left-half img{
+        height: fit-content;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    main .project .image-right-half{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    main .project .image-right-half img{
+        height: fit-content;
+        object-fit: contain;
+        width: 100%;
+    }
+
+    /* video */
+    main .project .video-right {
+        height: 40vh;
+        width: 100%;
+        margin: 10px 10px 20px 10px;
+        float: right;
+    }
+    
+    main .project .video-right video {
+        object-fit: cover;
+        height: 40vh;
+        width: 100%;
+    }
+
+    /* project text */
+    main .project .text-left{ 
+        width: 100%;
+        margin: 0;
+    }
+
+    main .project .text-left h4 { 
+        font-size: 16px;
+    }
+
+    main .project .text-left p { 
+        font-size: 14px;
+    }
+
+    main .project .text-right{ 
+        width: 100%;
+        margin: 0;
+    }
+
+    main .project .text-right h4 { 
+        font-size: 16px;
+    }
+
+    main .project .text-right p { 
+        font-size: 14px;
+    }
+
+    main .project ul li {
+        font-size: 14px;
+    }
+
+
+
+    /* about page */
+    main .about-intro {
+        height: fit-content;
+        margin-top: 70px;
+        padding-bottom: 40px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    main .about-intro .about-image img {
+        display: none;
+    }
+
+    main .about-intro .about-intro-text {
+        width: 100%;
+    }
+
+    main .about-intro .about-intro-text h1 {
+        font-size: 10vw;
+    }
+
+    main .about-intro .about-intro-text p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* contact form */
+    .contact-form form {
+        width: 100%;
+    }
+
+    .contact-form form label{
+        font-size: 14px;
+    }
+
+    .contact-form h2 {
+        font-size: 16px;
+    }
+
+
+
+    footer{
+        padding-top: 30px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+}

@@ -1,79 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peyton Wood</title>
 
-    <link rel="stylesheet" href="design.css" />
+    <link rel="stylesheet" href="/CSS/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
-    <script src="https://kit.fontawesome.com/60e3d1497d.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/7240fc00d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
-        <h3><a href="https://peyton-wood.github.io/index.html">Peyton Wood</a></h3>
-        <nav>
-            <h4><a href="peyton-wood.github.io/index.html">Design</a></h4>
-            <h4><a href="https://peyton-wood.github.io/about.html">About/Contact</a></h4>
-        </nav>
-    </header>
 
-    <div class="fullpage">
+    <!-- wrapper -->
+    <div id="wrapper">
 
-        <div class="intro">
-            <h1>Hi, I'm <span style="color: #8782F6; font-family: 'Syne', sans-serif;">Peyton</span></h1>
-            <p>Welcome to my design portfolio! I'm a graphic designer and illustrator who loves creating eye-catching compositions that bring brands and products to life.</p>
-            <p>Please check out some of my projects &rarr;</p>
-        </div>
+        <!-- header -->
+        <header>
+            <!-- name -->
+            <div class="name">
+                <h3><a href="#intro">Peyton Wood</a></h3>
+            </div>
 
-        <!--This is the main image grid-->
-        <div class="projects">
+            <!-- nav -->
+            <nav>
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+
+            <!-- hamburger nav -->
+            <div class="mobile-nav">
+                <i class="fa-solid fa-bars fa-xl" style="color: #000000;" id="hamburger-menu"></i>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="mobile-nav-links">
+                <a href="index.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+            </div>
             
-            <div class="imagebox">
-                <a class="link" href="https://peyton-wood.github.io/harvest.html">
-                    <img src="designimages/harvest_instaposts-02.png" alt="Harvest">
-                </a>
+        </header>
+
+        <div class="clearfix"></div>
+
+        <!-- main -->
+        <main>
+            <!-- intro -->
+            <div id="intro" class="intro">
+                <!-- text -->
+                <div class="intro-text">
+                    <h1>Hi, I'm Peyton</h1>
+
+                    <p>
+                        I'm a UI/UX and graphic designer based in Washington State who loves creating eye-catching compositions that bring brands and products to life. 
+                    </p>
+
+                    <!-- buttons -->
+                    <div class="button">
+                        <a href="https://www.instagram.com/peytonw.design/" target="_blank">Instagram</a>
+                    </div>
+
+                    <div class="button">
+                        <a href="https://www.linkedin.com/in/peyton-wood" target="_blank">LinkedIn</a>
+                    </div>
+
+                    <div class="button">
+                        <a href="about.html">About Me</a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+
+                <!-- image
+                <div class="intro-img"></div>
+
+                <div class="clearfix"></div> -->
             </div>
 
-            <div class="imagebox">
-                <a class="link" href="https://peyton-wood.github.io/humm.html">
-                    <img src="designimages/humm_Humm 4 - Copy.png" alt="Humm">
-                </a>
+            <!-- see my work -->
+            <div class="seemore">
+                <p>See my work</p>
+                <p class="arrow">&darr;</p>
             </div>
 
-            <div class="imagebox">
-                <a class="link" href="https://peyton-wood.github.io/bearlyawake.html">
-                    <img src="designimages/bearlyawakecoffeemockup.png" alt="Bearly Awake Coffee">
-                </a>
+            <!-- UI/UX Design -->
+            <div id="ui-design">
+                <div class="ui-design-content">
+                    <!-- section title -->
+                    <h2>UI/UX DESIGN</h2>
+
+                    <!-- column 1 -->
+                    <div class="ui-column">
+                        <div class="ui-image">
+                            <img src="images/tandem_cover.png" alt="Tandem app redesign images">
+                        </div>
+
+                        <div class="ui-text">
+                            <h4>TANDEM</h4>
+
+                            <p>Tandem is a language exchange app that strives to bring users together to share their native languages and help others learn.</p>
+
+                            <div class="button"><a href="tandem.html">View Case Study</a></div>
+                        </div>
+                    </div>
+
+                    <!-- column 2 -->
+                    <div class="ui-column">
+                        <div class="ui-image">
+                            <img src="images/unsplash_cover.png" alt="Unsplash app design images">
+                        </div>
+
+                        <div class="ui-text">
+                            <h4>UNSPLASH</h4>
+
+                            <p>Unsplash is a popular stock photo app that allows photographers around the world to share their images.</p>
+
+                            <div class="button"><a href="unsplash.html">View Case Study</a></div>
+                        </div>
+                    </div>
+
+                    <!-- column 3 -->
+                    <div class="ui-column">
+                        <div class="ui-image">
+                            <img src="images/scheels_cover.png" alt="Scheels app design images">
+                        </div>
+
+                        <div class="ui-text">
+                            <h4>SCHEELS</h4>
+
+                            <p>Scheels is a popular sporting goods store that features a ferris wheel, aquarium, and arcade. This app redesign features beacon technology for easier navigation</p>
+
+                            <div class="button"><a href="scheels.html">View Case Study</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="imagebox">
-                <a class="link" href="https://peyton-wood.github.io/modesto.html">
-                    <img src="modestoimages/modesto4.png" alt="Modesto Type Poster">
-                </a>
+            <div class="clearfix"></div>
+
+            <!-- Graphic Design -->
+            <div id="graphic-design">
+
+                <div class="gd-content">
+                    <!-- section title -->
+                    <h2>GRAPHIC DESIGN</h2>
+
+                    <!-- column 1 -->
+                    <div class="gd-column">
+                        <div class="gd-image">
+                            <img src="images/peachkids_cover.png" alt="Peach Kids soap">
+                        </div>
+
+                        <div class="gd-text">
+                            <h4>PEACH KIDS</h4>
+
+                            <p>PeachKids is a fun and unique soap brand for kids.  The interactive and plastic-free packaging teaches kids about environmentally-friendly habits</p>
+
+                            <div class="button"><a href="peach.html">View Redesign</a></div>
+                        </div>
+                    </div>
+
+                    <!-- column 2 -->
+                    <div class="gd-column">
+                        <div class="gd-image">
+                            <img src="images/humm_cover.png" alt="Humm kombucha bottles in cooler">
+                        </div>
+
+                        <div class="gd-text">
+                            <h4>HUMM</h4>
+
+                            <p>Humm is a kombucha brand made for the average shopper looking for a healthy soda alternative.</p>
+
+                            <div class="button"><a href="humm.html">View Redesign</a></div>
+                        </div>
+                    </div>
+
+                    <!-- column 3 -->
+                    <div class="gd-column">
+                        <div class="gd-image">
+                            <img src="images/harvest_cover.png" alt="Harvest brand Instagram posts">
+                        </div>
+
+                        <div class="gd-text">
+                            <h4>HARVEST</h4>
+
+                            <p>Harvest is a timekeeping service with a bold and modern brand concept.</p>
+
+                            <div class="button"><a href="harvest.html">View Redesign</a></div>
+                        </div>
+                    </div>
+
+                    <!-- column 4 -->
+                    <div class="gd-column">
+                        <div class="gd-image">
+                            <img src="images/posters-cover.png" alt="Collection of posters">
+                        </div>
+
+                        <div class="gd-text">
+                            <h4>POSTER DESIGN</h4>
+
+                            <p>Check out the various posters I have designed.</p>
+
+                            <div class="button"><a href="posters.html">View Posters</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="imagebox">
-                <a class="link" href="https://peyton-wood.github.io/endfair.html">
-                    <img src="designimages/endfair_mockup.png" alt="EndFair Poster">
-                </a>
-            </div>
+            <div class="clearfix"></div>
 
-            <div class="imagebox">
-                <a class="link" href="https://peyton-wood.github.io/plantpositivity.html">
-                    <img src="designimages/plantpositivityposter.png" alt="Plant Positivity Poster">
-                </a>
-            </div>
-        </div>
 
+        </main>
+
+        <!-- footer -->
+        <footer>
+            <p>Copyright &copy; 2023 Peyton Wood</p>
+        </footer>
+
+    <!-- end wrapper -->
     </div>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
+
+</html>
