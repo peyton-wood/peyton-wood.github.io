@@ -980,6 +980,7 @@ footer p {
     main .project .image-left{
         width: 98%;
         float: none;
+        width: 100%;
         padding: 0;
         margin-bottom: 40px;
     }
@@ -1006,13 +1007,14 @@ footer p {
     main .project .image-left-half{
         width: 98%;
         float: none;
+        width: 100%;
         padding: 0;
         margin-bottom: 40px;
-        height: 30vh;
     }
 
     main .project .image-left-half img{
-        height: 30vh;
+        height: fit-content;
+        object-fit: contain;
         width: 100%;
     }
 
@@ -1020,12 +1022,11 @@ footer p {
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
-        height: 30vh;
-        object-fit: cover;
     }
 
     main .project .image-right-half img{
-        height: 30vh;
+        height: fit-content;
+        object-fit: contain;
         width: 100%;
     }
 
