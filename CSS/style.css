@@ -972,6 +972,7 @@ footer p {
 
     main .project {
         flex-direction: column;
+        height: auto;
     }
 
     main .project h2 {
