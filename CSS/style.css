@@ -838,6 +838,11 @@ footer p {
         clear: both;
     }
 
+    main {
+        height: 100%;
+        width: 100%;
+    }
+
     /* header */
     header .mobile-nav #hamburger-menu {
         padding-top: 28px;
@@ -870,7 +875,6 @@ footer p {
 
     /* UI/UX Design */
     main #ui-design .ui-design-content {
-        flex-direction: column;
         height: 100%;
     }
 
@@ -903,7 +907,6 @@ footer p {
     /* Graphic Design */
     main #graphic-design .gd-content {
         margin-top: 40px;
-        flex-direction: column;
         height: 100%;
     }
 
