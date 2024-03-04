@@ -986,7 +986,7 @@ footer p {
         clear: both;
         width: 100%;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         height: 20vh;
     }
 
@@ -999,7 +999,7 @@ footer p {
     main .project .image-right{
         width: 100%;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         height: 20vh;
         clear: both;
     }
@@ -1015,7 +1015,7 @@ footer p {
         clear: both;
         width: 100%;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         height: 20vh;
     }
 
@@ -1029,7 +1029,7 @@ footer p {
     main .project .image-right-half{
         width: 100%;
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         clear: both;
     }
 
