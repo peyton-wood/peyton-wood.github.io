@@ -1009,11 +1009,11 @@ footer p {
         padding: 0;
         margin-bottom: 40px;
         height: 30vh;
+        object-fit: cover;
     }
 
     main .project .image-left-half img{
         height: 30vh;
-        object-fit: cover;
         width: 100%;
     }
 
@@ -1022,11 +1022,11 @@ footer p {
         padding: 0;
         margin-bottom: 40px;
         height: 30vh;
+        object-fit: cover;
     }
 
     main .project .image-right-half img{
         height: 30vh;
-        object-fit: cover;
         width: 100%;
     }
 
