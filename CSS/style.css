@@ -971,8 +971,7 @@ footer p {
     }
 
     main .project {
-        flex-direction: column;
-        width: 100%;
+        height: 100%;
     }
 
     main .project h2 {
@@ -985,6 +984,8 @@ footer p {
     main .project .image-left{
         width: 100%;
         float: none;
+        margin: 0;
+        padding: 0;
     }
 
     main .project .image-left img{
@@ -995,6 +996,8 @@ footer p {
     main .project .image-right{
         width: 100%;
         float: none;
+        margin: 0;
+        padding: 0;
     }
 
     main .project .image-right img{
@@ -1006,6 +1009,8 @@ footer p {
     main .project .image-left-half{
         width: 100%;
         float: none;
+        margin: 0;
+        padding: 0;
     }
 
     main .project .image-left-half img{
@@ -1016,6 +1021,8 @@ footer p {
     main .project .image-right-half{
         width: 100%;
         float: none;
+        margin: 0;
+        padding: 0;
     }
 
     main .project .image-right-half img{
@@ -1040,9 +1047,9 @@ footer p {
     /* project text */
     main .project .text-left{ 
         width: 100%;
-        margin: 0;
         float: none;
-        height: auto;
+        margin: 0;
+        padding: 0;
     }
 
     main .project .text-left h4 { 
@@ -1055,9 +1062,9 @@ footer p {
 
     main .project .text-right{ 
         width: 100%;
-        margin: 0;
         float: none;
-        height: auto;
+        margin: 0;
+        padding: 0;
     }
 
     main .project .text-right h4 { 
