@@ -1008,22 +1008,24 @@ footer p {
         float: none;
         padding: 0;
         margin-bottom: 40px;
+        height: 30vh;
     }
 
     main .project .image-left-half img{
-        height: 10vh;
+        height: 30vh;
         width: 100%;
     }
 
     main .project .image-right-half{
-        width: 98%;
-        float: none;
+        width: 100%;
         padding: 0;
         margin-bottom: 40px;
+        height: 30vh;
+        object-fit: cover;
     }
 
     main .project .image-right-half img{
-        height: 10vh;
+        height: 30vh;
         width: 100%;
     }
 
