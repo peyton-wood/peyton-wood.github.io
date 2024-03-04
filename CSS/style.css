@@ -1043,7 +1043,7 @@ footer p {
         height: 40vh;
         width: 100%;
         margin: 10px 10px 20px 10px;
-        float: right;
+        clear: both;
     }
     
     main .project .video-right video {
@@ -1056,7 +1056,7 @@ footer p {
     main .project .text-left{ 
         width: 100%;
         margin: 0;
-        float: none;
+        clear: both;
     }
 
     main .project .text-left h4 { 
@@ -1070,7 +1070,7 @@ footer p {
     main .project .text-right{ 
         width: 100%;
         margin: 0;
-        float: none;
+        clear: both;
     }
 
     main .project .text-right h4 { 
