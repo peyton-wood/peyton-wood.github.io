@@ -611,80 +611,80 @@ footer p {
 
     /* index */
     /* intro */
-    .intro {
+    main .intro {
         height: 30vh;
         margin-top: 10vh;
     }
 
     /* intro-text */
-    .intro .intro-text {
+    main .intro .intro-text {
         width: 100%;
     }
 
-    .intro .intro-text h1 {
+    main .intro .intro-text h1 {
         font-size: 9vw;
     }
 
-    .intro .intro-text p {
+    main .intro .intro-text p {
         font-size: 18px;
         width: 70%;
     }
 
     /* socials */
-    .intro-text a i {
+    main .intro-text a i {
         display: none;
     }
 
     /* intro image */
-    .intro .intro-img {
+    main .intro .intro-img {
         display: none;
     }
 
     /* intro buttons */
-    .intro .button {
+    main .intro .button {
         display: none;
     }
 
-    .seemore {
+    main .seemore {
         display: none;
     }
 
     /* UI/UX Design */
-    #ui-design .ui-design-content .ui-column {
+    main #ui-design .ui-design-content .ui-column {
         width: 100%;
         padding: 0 10px;
         float: none;
         height: 65vh;
     }
 
-    #ui-design .ui-design-content .ui-column .ui-text h4 {
+    main #ui-design .ui-design-content .ui-column .ui-text h4 {
         font-size: 18px;
     }
 
-    #ui-design .ui-design-content .ui-column .ui-text p {
+    main #ui-design .ui-design-content .ui-column .ui-text p {
         font-size: 18px;
     }
 
     /* Graphic Design */
-    #graphic-design .gd-content .gd-column {
+    main #graphic-design .gd-content .gd-column {
         width: 100%;
         padding: 0 10px;
         float: none;
         height: 65vh;
     }
 
-    #graphic-design .gd-content .gd-column .gd-text h4 {
+    main #graphic-design .gd-content .gd-column .gd-text h4 {
         font-size: 18px;
     }
 
-    #graphic-design .gd-content .gd-column .gd-text p {
+    main #graphic-design .gd-content .gd-column .gd-text p {
         font-size: 18px;
     }
 
 
 
     /* project pages */
-    .project-intro {
+    main .project-intro {
         width: 95%;
         height: 50vh;
         display: flex;
@@ -848,80 +848,80 @@ footer p {
     }
     
     /* index page */
-    .intro {
+    main .intro {
         height: 20vh;
         margin-bottom: 4%;
     }
 
-    .button a {
+    main .button a {
         font-size: 14px;
     }
 
     /* intro-text */
 
-    .intro .intro-text h1 {
+    main .intro .intro-text h1 {
         font-size: 10vw;
     }
 
-    .intro .intro-text p {
+    main .intro .intro-text p {
         font-size: 16px;
         width: 100%;
     }
 
     /* UI/UX Design */
-    #ui-design .ui-design-content .ui-column {
+    main #ui-design .ui-design-content .ui-column {
         padding: 10px 10px;
         height: 70vh;
     }
 
-    #ui-design .ui-design-content h2 {
+    main #ui-design .ui-design-content h2 {
         font-size: 16px;
     }
 
-    #ui-design .ui-design-content .ui-column .ui-text h4 {
+    main #ui-design .ui-design-content .ui-column .ui-text h4 {
         font-size: 16px;
     }
 
-    #ui-design .ui-design-content .ui-column .ui-text p {
+    main #ui-design .ui-design-content .ui-column .ui-text p {
         font-size: 16px;
         width: 100%;
     }
 
-    #ui-design .ui-design-content .ui-column .ui-image {
+    main #ui-design .ui-design-content .ui-column .ui-image {
         height: 30vh;
     }
 
-    #ui-design .ui-design-content .ui-column .ui-image img {
+    main #ui-design .ui-design-content .ui-column .ui-image img {
         height: 30vh;
     }
 
     /* Graphic Design */
-    #graphic-design .gd-content {
+    main #graphic-design .gd-content {
         margin-top: 40px;
     }
 
-    #graphic-design .gd-content h2 {
+    main #graphic-design .gd-content h2 {
         font-size: 16px;
     }
 
-    #graphic-design .gd-content .gd-column {
+    main #graphic-design .gd-content .gd-column {
         padding: 10px 10px;
         height: 70vh;
     }
 
-    #graphic-design .gd-content .gd-column .gd-image {
+    main #graphic-design .gd-content .gd-column .gd-image {
         height: 30vh;
     }
 
-    #graphic-design .gd-content .gd-column .gd-image img {
+    main #graphic-design .gd-content .gd-column .gd-image img {
         height: 30vh;
     }
 
-    #graphic-design .gd-content .gd-column .gd-text h4 {
+    main #graphic-design .gd-content .gd-column .gd-text h4 {
         font-size: 16px;
     }
 
-    #graphic-design .gd-content .gd-column .gd-text p {
+    main #graphic-design .gd-content .gd-column .gd-text p {
         font-size: 16px;
         width: 100%;
     }
@@ -930,7 +930,7 @@ footer p {
 
 
     /* project pages */
-    .project-intro {
+    main .project-intro {
         height: fit-content;
         padding-top: 70px;
         padding-bottom: 20px;
