@@ -881,6 +881,7 @@ footer p {
     main #ui-design .ui-design-content .ui-column {
         padding: 10px 10px;
         height: 65vh;
+        width: 98%;
     }
 
     main #ui-design .ui-design-content h2 {
@@ -917,6 +918,7 @@ footer p {
     main #graphic-design .gd-content .gd-column {
         padding: 10px 10px;
         height: 65vh;
+        width: 98%;
     }
 
     main #graphic-design .gd-content .gd-column .gd-image {
