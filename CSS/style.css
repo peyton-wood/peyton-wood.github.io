@@ -983,7 +983,7 @@ footer p {
 
     /* project images */
     main .project .image-left{
-        float: none;
+        clear: both;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
@@ -1001,6 +1001,7 @@ footer p {
         padding: 0;
         margin-bottom: 40px;
         height: auto;
+        clear: both;
     }
 
     main .project .image-right img{
@@ -1011,7 +1012,7 @@ footer p {
 
     /* split images */
     main .project .image-left-half{
-        float: none;
+        clear: both;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
@@ -1029,6 +1030,7 @@ footer p {
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
+        clear: both;
     }
 
     main .project .image-right-half img{
