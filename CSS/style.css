@@ -982,11 +982,11 @@ footer p {
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
-        height: fit-content;
+        height: 20vh;
     }
 
     main .project .image-left img{
-        height: fit-content;
+        height: 20vh;
         object-fit: contain;
         width: 100%;
     }
@@ -996,11 +996,11 @@ footer p {
         padding: 0;
         margin-bottom: 40px;
         float: none;
-        height: fit-content;
+        height: 20vh;
     }
 
     main .project .image-right img{
-        height: fit-content;
+        height: 20vh;
         object-fit: contain;
         width: 100%;
     }
