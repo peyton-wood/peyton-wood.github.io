@@ -983,11 +983,11 @@ footer p {
 
     /* project images */
     main .project .image-left{
-        float: none;
+        clear: both;
         width: 100%;
         padding: 0;
-        margin-bottom: 0px;
-        height: 20vh;
+        margin: auto;
+        height: 30vh;
     }
 
     main .project .image-left img{
@@ -997,11 +997,11 @@ footer p {
     }
 
     main .project .image-right{
+        clear: both;
         width: 100%;
         padding: 0;
-        margin-bottom: 0px;
-        height: 20vh;
-        float: none;
+        margin: auto;
+        height: 30vh;
     }
 
     main .project .image-right img{
@@ -1012,11 +1012,11 @@ footer p {
 
     /* split images */
     main .project .image-left-half{
-        float: none;
+        clear: both;
         width: 100%;
         padding: 0;
-        margin-bottom: 0px;
-        height: 20vh;
+        margin: auto;
+        height: 30vh;
     }
 
     main .project .image-left-half img{
@@ -1026,11 +1026,11 @@ footer p {
     }
 
     main .project .image-right-half{
+        clear: both;
         width: 100%;
         padding: 0;
-        margin-bottom: 0px;
-        float: none;
-        height: 20vh;
+        margin: auto;
+        height: 30vh;
     }
 
     main .project .image-right-half img{
