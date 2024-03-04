@@ -1091,6 +1091,12 @@ footer p {
         width: 100%;
     }
 
+    main .about-intro .about-intro-text .button {
+        float: none;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
     /* contact form */
     .contact-form form {
         width: 100%;
