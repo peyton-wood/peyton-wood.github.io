@@ -964,7 +964,6 @@ footer p {
     main .project .image-left{
         width: 98%;
         float: none;
-        height: 100%;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
@@ -977,7 +976,6 @@ footer p {
     }
 
     main .project .image-right{
-        height: 100%;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
@@ -993,7 +991,6 @@ footer p {
     main .project .image-left-half{
         width: 98%;
         float: none;
-        height: 100%;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
@@ -1006,7 +1003,6 @@ footer p {
     }
 
     main .project .image-right-half{
-        height: 100%;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
