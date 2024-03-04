@@ -1014,7 +1014,7 @@ footer p {
 
     main .project .image-left-half img{
         height: fit-content;
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
     }
 
@@ -1026,7 +1026,7 @@ footer p {
 
     main .project .image-right-half img{
         height: fit-content;
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
     }
 
