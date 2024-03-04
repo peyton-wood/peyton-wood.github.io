@@ -980,7 +980,6 @@ footer p {
 
     /* left image */
     main .project .image-left {
-        height: 20vh;
         width: 100%;
         margin: 0;
         float: none;
@@ -994,7 +993,6 @@ footer p {
 
     /* right image */
     main .project .image-right {
-        height: 20vh;
         width: 100%;
         margin: 0;
         float: none;
@@ -1008,7 +1006,6 @@ footer p {
 
     /* split images */
     main .project .image-left-half {
-        height: 20vh;
         width: 100%;
         margin: 0;
         float: none;
@@ -1021,7 +1018,6 @@ footer p {
     }
 
     main .project .image-right-half {
-        height: 20vh;
         width: 100%;
         margin: 0;
         float: none;
