@@ -983,58 +983,38 @@ footer p {
 
     /* project images */
     main .project .image-left{
-        clear: both;
         width: 100%;
-        padding: 0;
-        margin: auto;
-        height: 30vh;
     }
 
     main .project .image-left img{
-        height: fit-content;
         object-fit: contain;
         width: 100%;
     }
 
     main .project .image-right{
-        clear: both;
         width: 100%;
-        padding: 0;
-        margin: auto;
-        height: 30vh;
     }
 
     main .project .image-right img{
-        height: fit-content;
         object-fit: contain;
         width: 100%;
     }
 
     /* split images */
     main .project .image-left-half{
-        clear: both;
         width: 100%;
-        padding: 0;
-        margin: auto;
-        height: 30vh;
     }
 
     main .project .image-left-half img{
-        height: fit-content;
         object-fit: contain;
         width: 100%;
     }
 
     main .project .image-right-half{
-        clear: both;
         width: 100%;
-        padding: 0;
-        margin: auto;
-        height: 30vh;
     }
 
     main .project .image-right-half img{
-        height: fit-content;
         object-fit: contain;
         width: 100%;
     }
