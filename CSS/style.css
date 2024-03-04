@@ -987,11 +987,13 @@ footer p {
         width: 100%;
         margin: 0;
         float: none;
+        height: 25vh;
     }
 
     main .project .image-left img {
         width: 100%;
         object-fit: contain;
+        height: 25vh;
     }
 
     /* right image */
@@ -999,11 +1001,13 @@ footer p {
         width: 100%;
         margin: 0;
         float: none;
+        height: 25vh;
     }
 
     main .project .image-right img {
         width: 100%;
         object-fit: contain;
+        height: 25vh;
     }
 
     /* split images */
@@ -1011,22 +1015,26 @@ footer p {
         width: 100%;
         margin: 0;
         float: none;
+        height: 25vh;
     }
 
     main .project .image-left-half img {
         width: 100%;
         object-fit: contain;
+        height: 25vh;
     }
 
     main .project .image-right-half {
         width: 100%;
         margin: 0;
         float: none;
+        height: 25vh;
     }
 
     main .project .image-right-half img {
         width: 100%;
         object-fit: contain;
+        height: 25vh;
     }
 
     /* video */
