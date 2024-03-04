@@ -879,7 +879,7 @@ footer p {
     }
 
     main #ui-design .ui-design-content .ui-column {
-        padding: 5px 7px;
+        padding: 8px 8px;
         height: 60vh;
     }
 
@@ -898,6 +898,7 @@ footer p {
 
     main #ui-design .ui-design-content .ui-column .ui-image {
         height: 30vh;
+        object-fit: cover;
     }
 
     main #ui-design .ui-design-content .ui-column .ui-image img {
@@ -915,12 +916,13 @@ footer p {
     }
 
     main #graphic-design .gd-content .gd-column {
-        padding: 5px 7px;
+        padding: 8px 8px;
         height: 60vh;
     }
 
     main #graphic-design .gd-content .gd-column .gd-image {
         height: 30vh;
+        object-fit: cover;
     }
 
     main #graphic-design .gd-content .gd-column .gd-image img {
