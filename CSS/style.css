@@ -834,6 +834,10 @@ footer p {
 /* Phone media query */
 @media only screen and (max-width:768px) {
 
+    .clearfix {
+        clear: both;
+    }
+
     /* header */
     header .mobile-nav #hamburger-menu {
         padding-top: 28px;
