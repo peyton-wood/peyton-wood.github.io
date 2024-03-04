@@ -869,6 +869,10 @@ footer p {
     }
 
     /* UI/UX Design */
+    main #ui-design .ui-design-content {
+        flex-direction: column;
+    }
+
     main #ui-design .ui-design-content .ui-column {
         padding: 10px 10px;
         height: 70vh;
