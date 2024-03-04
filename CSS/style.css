@@ -991,7 +991,7 @@ footer p {
 
     main .project .image-left img {
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     /* right image */
@@ -1003,7 +1003,7 @@ footer p {
 
     main .project .image-right img {
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     /* split images */
@@ -1015,7 +1015,7 @@ footer p {
 
     main .project .image-left-half img {
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     main .project .image-right-half {
@@ -1026,7 +1026,7 @@ footer p {
 
     main .project .image-right-half img {
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 
     /* video */
