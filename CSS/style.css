@@ -978,11 +978,11 @@ footer p {
 
     /* project images */
     main .project .image-left{
-        width: 98%;
         float: none;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
+        height: auto;
     }
 
     main .project .image-left img{
@@ -995,6 +995,7 @@ footer p {
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
+        height: auto;
     }
 
     main .project .image-right img{
@@ -1005,17 +1006,18 @@ footer p {
 
     /* split images */
     main .project .image-left-half{
-        width: 98%;
         float: none;
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
+        height: auto;
     }
 
     main .project .image-left-half img{
         height: fit-content;
         object-fit: contain;
         width: 100%;
+        height: auto;
     }
 
     main .project .image-right-half{
