@@ -871,7 +871,7 @@ footer p {
     /* UI/UX Design */
     main #ui-design .ui-design-content {
         flex-direction: column;
-        height: fit-content;
+        height: 100%;
     }
 
     main #ui-design .ui-design-content .ui-column {
@@ -904,7 +904,7 @@ footer p {
     main #graphic-design .gd-content {
         margin-top: 40px;
         flex-direction: column;
-        height: fit-content;
+        height: 100%;
     }
 
     main #graphic-design .gd-content h2 {
