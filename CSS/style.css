@@ -971,6 +971,7 @@ footer p {
     }
 
     main .project {
+        flex-direction: column;
         width: 100%;
     }
 
