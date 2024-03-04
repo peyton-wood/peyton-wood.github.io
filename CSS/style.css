@@ -982,7 +982,7 @@ footer p {
         width: 100%;
         padding: 0;
         margin-bottom: 40px;
-        height: auto;
+        height: fit-content;
     }
 
     main .project .image-left img{
@@ -996,7 +996,7 @@ footer p {
         padding: 0;
         margin-bottom: 40px;
         float: none;
-        height: auto;
+        height: fit-content;
     }
 
     main .project .image-right img{
