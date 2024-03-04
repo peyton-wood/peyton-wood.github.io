@@ -970,6 +970,10 @@ footer p {
         font-size: 14px;
     }
 
+    main .project {
+        height: auto;
+    }
+
     main .project h2 {
         width: 100%;
         font-size: 16px;
@@ -987,7 +991,6 @@ footer p {
 
     main .project .image-left img {
         width: 100%;
-        height: 20vh;
         object-fit: cover;
     }
 
@@ -1000,7 +1003,6 @@ footer p {
 
     main .project .image-right img {
         width: 100%;
-        height: 20vh;
         object-fit: cover;
     }
 
@@ -1013,7 +1015,6 @@ footer p {
 
     main .project .image-left-half img {
         width: 100%;
-        height: 20vh;
         object-fit: cover;
     }
 
@@ -1025,7 +1026,6 @@ footer p {
 
     main .project .image-right-half img {
         width: 100%;
-        height: 20vh;
         object-fit: cover;
     }
 
