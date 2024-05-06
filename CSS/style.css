@@ -162,9 +162,9 @@ main {
 /* UI/UX Design */
 #ui-design {
     width: 95%;
-    height: 50vh;
+    height: 60vh;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 auto 10% auto;
 }
 
 #ui-design .ui-design-content {
@@ -210,13 +210,13 @@ main {
 /* Graphic Design */
 #graphic-design {
     width: 95%;
-    height: 70vh;
+    height: 60vh;
     padding: 0 10px;
     margin: 0 auto 10% auto;
 }
 
 #graphic-design .gd-content {
-    padding-top: 8%;
+    padding-top: 3%;
 }
 
 #graphic-design .gd-content h2 {
@@ -650,6 +650,9 @@ footer p {
     }
 
     /* UI/UX Design */
+    main #ui-design {
+        margin-top: 15%;
+    }
     main #ui-design .ui-design-content .ui-column {
         width: 100%;
         padding: 0 10px;
