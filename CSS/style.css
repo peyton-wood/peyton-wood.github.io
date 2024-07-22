@@ -25,6 +25,7 @@ header {
     top: 0;
     z-index: 1;
     background-color: white;
+    left: 0;
 }
 
 /* name */
@@ -159,60 +160,12 @@ main {
     font-size: 20px;
 }
 
-/* UI/UX Design */
-#ui-design {
-    width: 95%;
-    height: 60vh;
-    padding: 0 10px;
-    margin: 0 auto 10% auto;
-}
-
-#ui-design .ui-design-content {
-    padding-top: 3%;
-}
-
-#ui-design .ui-design-content h2 {
-    font-weight: 200;
-    padding-left: 10px;
-    font-size: 20px;
-}
-
-#ui-design .ui-design-content .ui-column {
-    width: 33.3%;
-    padding: 0 10px;
-    float: left;
-}
-
-#ui-design .ui-design-content .ui-column .ui-image {
-    width: 100%;
-    height: 40vh;
-    background-color: grey;
-}
-
-#ui-design .ui-design-content .ui-column .ui-image img {
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-}
-
-#ui-design .ui-design-content .ui-column .ui-text {
-    padding-top: 10px;
-}
-
-#ui-design .ui-design-content .ui-column .ui-text h4 {
-    font-weight: 200;
-}
-
-#ui-design .ui-design-content .ui-column .ui-text p {
-    width: 75%;
-}
-
 /* Graphic Design */
 #graphic-design {
     width: 95%;
     height: 60vh;
     padding: 0 10px;
-    margin: 0 auto 10% auto;
+    margin: 0 auto 8% auto;
 }
 
 #graphic-design .gd-content {
@@ -255,6 +208,102 @@ main {
     width: 70%;
 }
 
+/* UI/UX Design */
+#ui-design {
+    width: 95%;
+    height: 60vh;
+    padding: 0 10px;
+    margin: 0 auto 8% auto;
+}
+
+#ui-design .ui-design-content {
+    padding-top: 3%;
+}
+
+#ui-design .ui-design-content h2 {
+    font-weight: 200;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+#ui-design .ui-design-content .ui-column {
+    width: 33.3%;
+    padding: 0 10px;
+    float: left;
+}
+
+#ui-design .ui-design-content .ui-column .ui-image {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+}
+
+#ui-design .ui-design-content .ui-column .ui-image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#ui-design .ui-design-content .ui-column .ui-text {
+    padding-top: 10px;
+}
+
+#ui-design .ui-design-content .ui-column .ui-text h4 {
+    font-weight: 200;
+}
+
+#ui-design .ui-design-content .ui-column .ui-text p {
+    width: 75%;
+}
+
+/* Illustration */
+#illustration {
+    width: 95%;
+    height: 60vh;
+    padding: 0 10px;
+    margin: 0 auto 10% auto;
+}
+
+#illustration .illustration-content {
+    padding-top: 3%;
+}
+
+#illustration .illustration-content h2 {
+    font-weight: 200;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+#illustration .illustration-content .illustration-column {
+    width: 100%;
+    padding: 0 10px;
+    float: left;
+}
+
+#illustration .illustration-content .illustration-column .illustration-image {
+    width: 100%;
+    height: 40vh;
+    background-color: grey;
+}
+
+#illustration .illustration-content .illustration-column .illustration-image img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+#illustration .illustration-content .illustration-column .illustration-text {
+    padding-top: 10px;
+    width: 33.33%;
+}
+
+#illustration .illustration-content .illustration-column .illustration-text h4 {
+    font-weight: 200;
+}
+
+#illustration .illustration-content .illustration-column .illustration-text p {
+    width: 75%;
+}
 
 
 
@@ -405,6 +454,49 @@ main .project .video-right video {
     height: 50vh;
     width: 100%;
 }
+
+/* illustration images */
+main .project .illust-image {
+    height: 55vh;
+    width: 32.2%;
+    margin: 10px 10px 20px 10px;
+    background-color: white;
+    float: left;
+}
+
+main .project .illust-image img {
+    width: 100%;
+    height: 55vh;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+/* illustration image popup */
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+}
+
+.popup img {
+    object-fit: contain;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: zoom-out;
+}
+
+.open-popup {
+    visibility: visible;
+}
+
 
 /* project text */
 /* left text */
@@ -649,6 +741,22 @@ footer p {
         display: none;
     }
 
+    /* Graphic Design */
+    main #graphic-design .gd-content .gd-column {
+        width: 100%;
+        padding: 0 10px;
+        float: none;
+        height: 65vh;
+    }
+
+    main #graphic-design .gd-content .gd-column .gd-text h4 {
+        font-size: 18px;
+    }
+
+    main #graphic-design .gd-content .gd-column .gd-text p {
+        font-size: 18px;
+    }
+
     /* UI/UX Design */
     main #ui-design {
         margin-top: 15%;
@@ -668,19 +776,26 @@ footer p {
         font-size: 18px;
     }
 
-    /* Graphic Design */
-    main #graphic-design .gd-content .gd-column {
+    /* Illustration */
+    main #illustration {
+        margin-top: 15%;
+    }
+    main #illustration .illustration-content .illustration-column {
         width: 100%;
         padding: 0 10px;
         float: none;
         height: 65vh;
     }
 
-    main #graphic-design .gd-content .gd-column .gd-text h4 {
+    main #illustration .illustration-content .illustration-column .illustration-text{
+        width: 100%;
+    }
+
+    main #illustration .illustration-content .illustration-column .illustration-text h4 {
         font-size: 18px;
     }
 
-    main #graphic-design .gd-content .gd-column .gd-text p {
+    main #illustration .illustration-content .illustration-column .illustration-text p {
         font-size: 18px;
     }
 
@@ -773,6 +888,53 @@ footer p {
         object-fit: cover;
         height: 60vh;
         width: 100%;
+    }
+
+    /* illustration images */
+    .tagline {
+        visibility: hidden;
+        height: 0;
+    }
+
+    main .project .illust-image {
+        height: 50vh;
+        width: 100%;
+        margin: 10px 10px 20px 10px;
+        background-color: white;
+        float: left;
+    }
+
+    main .project .illust-image img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+        cursor: zoom-in;
+    }
+
+    /* illustration image popup */
+    .popup {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,0.4);
+        visibility: hidden;
+    }
+
+    .popup img {
+        object-fit: contain;
+        max-height: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: zoom-out;
+    }
+
+    .open-popup {
+        visibility: visible;
     }
 
     /* project text */
@@ -876,6 +1038,39 @@ footer p {
         width: 100%;
     }
 
+    /* Graphic Design */
+    main #graphic-design .gd-content {
+        margin-top: 40px;
+        height: 100%;
+    }
+
+    main #graphic-design .gd-content h2 {
+        font-size: 16px;
+    }
+
+    main #graphic-design .gd-content .gd-column {
+        padding: 8px 8px;
+        height: 60vh;
+    }
+
+    main #graphic-design .gd-content .gd-column .gd-image {
+        height: 30vh;
+        object-fit: cover;
+    }
+
+    main #graphic-design .gd-content .gd-column .gd-image img {
+        height: 30vh;
+    }
+
+    main #graphic-design .gd-content .gd-column .gd-text h4 {
+        font-size: 16px;
+    }
+
+    main #graphic-design .gd-content .gd-column .gd-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
     /* UI/UX Design */
     main #ui-design .ui-design-content {
         height: 100%;
@@ -908,37 +1103,40 @@ footer p {
         height: 30vh;
     }
 
-    /* Graphic Design */
-    main #graphic-design .gd-content {
-        margin-top: 40px;
+    /* Illustration */
+    main #illustration .illustration-content {
         height: 100%;
     }
 
-    main #graphic-design .gd-content h2 {
-        font-size: 16px;
-    }
-
-    main #graphic-design .gd-content .gd-column {
+    main #illustration .illustration-content .illustration-column {
         padding: 8px 8px;
         height: 60vh;
     }
 
-    main #graphic-design .gd-content .gd-column .gd-image {
+    main #illustration .illustration-content h2 {
+        font-size: 16px;
+    }
+
+    main #illustration .illustration-content .illustration-column .illustration-text{
+        width: 100%;
+    }
+
+    main #illustration .illustration-content .illustration-column .illustration-text h4 {
+        font-size: 16px;
+    }
+
+    main #illustration .illustration-content .illustration-column .illustration-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    main #illustration .illustration-content .illustration-column .illustration-image {
         height: 30vh;
         object-fit: cover;
     }
 
-    main #graphic-design .gd-content .gd-column .gd-image img {
+    main #illustration .illustration-content .illustration-column .illustration-image img {
         height: 30vh;
-    }
-
-    main #graphic-design .gd-content .gd-column .gd-text h4 {
-        font-size: 16px;
-    }
-
-    main #graphic-design .gd-content .gd-column .gd-text p {
-        font-size: 16px;
-        width: 100%;
     }
 
 
@@ -1053,6 +1251,54 @@ footer p {
         object-fit: cover;
         height: 40vh;
         width: 100%;
+    }
+
+    /* illustration images */
+    .tagline {
+        visibility: hidden;
+        height: 0;
+    }
+
+    main .project .illust-image {
+        height: 40vh;
+        width: 100%;
+        margin: 10px 10px 20px 10px;
+        background-color: white;
+        float: left;
+    }
+
+    main .project .illust-image img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        cursor: zoom-in;
+    }
+
+    /* illustration image popup */
+    .popup {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,0.4);
+        visibility: hidden;
+    }
+
+    .popup img {
+        object-fit: contain;
+        max-height: 80%;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        cursor: zoom-out;
+    }
+
+    .open-popup {
+        visibility: visible;
     }
 
     /* project text */
