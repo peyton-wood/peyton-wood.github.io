@@ -438,7 +438,7 @@ main .outer_grid .inner_grid .small_image_right {
 
     header .mobile-nav {
         display: block;
-        width: 100%;
+        width: 40%;
         float: right;
         
     }
@@ -474,14 +474,13 @@ main .outer_grid .inner_grid .small_image_right {
     }
 
     header .name {
-        width: 50%;
+        width: 60%;
         float: left;
         height: auto;
-        margin: auto;
     }
 
-    header .name a h1{
-        font-size: 18px;
+    header .name a h1 {
+        font-size: 17px;
         width: 100%;
     }
 
