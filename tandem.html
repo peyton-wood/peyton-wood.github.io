@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tandem</title>
 
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/new_style.css">
 
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
@@ -13,223 +13,111 @@
 </head>
 
 <body>
-
-    <!-- wrapper -->
     <div id="wrapper">
 
-        <!-- header -->
+        <!-- header and nav -->
         <header>
-            <!-- name -->
             <div class="name">
-                <h3><a href="index.html">Peyton Wood</a></h3>
+                <a href="index.html"><h1>Peyton Wood</h1></a>
             </div>
 
-            <!-- nav -->
             <nav>
                 <ul>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="index.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="illustration.html">Illustration</a></li>
+                    <li><a href="index.html">Graphic Design</a></li>
                 </ul>
             </nav>
 
             <!-- hamburger nav -->
             <div class="mobile-nav">
                 <i class="fa-solid fa-bars fa-xl" style="color: #000000;" id="hamburger-menu"></i>
-            </div>
+                
+                <div class="clearfix"></div>
 
-            <div class="clearfix"></div>
-
-            <div class="mobile-nav-links">
-                <a href="index.html">PORTFOLIO</a>
-                <a href="about.html">ABOUT</a>
+                <div class="mobile-nav-links">
+                    <a href="index.html">GRAPHIC DESIGN</a>
+                    <a href="illustration.html">ILLUSTRATION</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
             </div>
-            
         </header>
 
         <div class="clearfix"></div>
 
-        <!-- main -->
         <main>
-            <!-- intro -->
-            <div class="project-intro">
-                <!-- text -->
-                <div class="intro-text">
-                    <h1>Tandem.</h1>
+            <div class="outer_grid">
+                <div class="project_text">
+                    <h1>Tandem</h1>
+                    <p>Tandem is a language exchange app that aims to bring users together to share their native languages and assist others in learning. In this app redesign, I am exploring how app navigation and accessibility can reduce overwhelm. Additionally, further personalization can help users feel safe and welcomed while navigating the world of language learning.</p>
+                    <p>View the full case study <a href="documents/tandem_casestudy.pdf">here</a></p>
 
-                    <p>
-                        Tandem is a language exchange app that aims to bring users together to share their native languages and assist others in learning. In this app redesign, I am exploring how app navigation and accessibility can reduce overwhelm. Additionally, further personalization can help users feel safe and welcomed while navigating the world of language learning.
-                    </p>
-
-                    <!-- buttons -->
-                    <div class="button">
-                        <a href="documents/tandem_casestudy.pdf" target="_blank">View Full Case Study</a>
-                    </div>
-
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- image -->
-                <div class="intro-img">
-                    <img src="images/tandem_intro_hero.png" alt="">
-                </div>
-
-                    <div class="clearfix"></div>
-            </div>
-
-            <div class="project">
-                <h2>RESEARCH AND PLANNING</h2>
-
-                <!-- row -->
-                <div class="text-left">
-                    <h4>BACKGROUND</h4>
-
-                    <p>Established in 2015 by three friends with a vision of connecting the world through language learning, Tandem is based in Berlin. The name draws inspiration from tandem language learning, a method that utilizes language exchange to learn from native speakers. The platform is designed for individuals seeking to advance their language skills by engaging in conversations with native speakers.</p>
-
-                    <h4>THE PROBLEM</h4>
-
+                    <h2>The Problem</h2>
                     <p>Tandem's app offers great potential for users to have a wonderful learning experience. The app allows users to quickly match with a native speaker and share their own language with others. Upon interviewing users of the app, I found that many of them felt the app could be intimidating and hard to navigate.</p>
 
-                    <p>Starting a conversation with a stranger can be intimidating and overwhelming for some users. My redesign of this app focuses on how we can limit the fear based around these conversations, and help users feel more welcomed within the language sharing community.</p>
+                    <p>Starting a conversation with a stranger can be intimidating and overwhelming for some users. My redesign of this app focuses on how we can limit the fear around these conversations, and help users feel more welcomed within the language sharing community.</p>
 
                     <p>Another prominent concern users voiced was a difficult navigation scheme. Many felt that navigating finding a partner can be quite difficult. Some users also voiced that navigating their user profile and editing/updating could be very difficult as well.</p>
+
+                    <h2>My Process</h2>
+                    <p>For this project, I began with user surveys. As stated above, many users felt the app structure and the idea of meeting new people could be intimidating and hard to navigate. After receiving this feedback, I started planning. Based on my goals and research, I started creating wireframes to plan how I wanted the app to look. From there, I began the protoyping process, utilizing user testing to ensure the app met the needs of those who would be using it.</p>
+
                 </div>
 
-                <div class="image-right">
-                    <img src="images/tandem_app_screenshots.png" alt="Screenshots of the original Tandem app">
+                <!-- inner grid contains images - float right, width: 2fr -->
+                <div class="inner_grid">
+                    <!-- images should have bottom padding of 10px -->
+                    <img class="large_image" src="images/tandem_final.png" alt="">
+                    <h2 style="text-align: center;">Before</h2>
+                    <img class="large_image" src="images/tandem_app_screenshots.png" alt="">
+                    <h2 style="text-align: center;">Research</h2>
+                    <img class="large_image" src="images/tandem_userjourney.png" alt="">
+                    <img class="large_image" src="images/tandem_goals.png" alt="" >
+                    <h2 style="text-align: center;">wireframes</h2>
+                    <img class="large_image" src="images/tandem_final_wireframes.png" alt="" >
+                    <h2 style="text-align: center;">PROTOTYPING</h2>
+                    <img class="large_image" src="images/tandem_lofi_prototype.png" alt="" >
+                    <img class="large_image" src="images/tandem_hifi_prototype.png" alt="" >
                 </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="image-left">
-                    <img src="images/tandem_userjourney.png" alt="Tandem app user journey map">
-                </div>
-
-                <div class="text-right">
-                    <h4>MARKET RESEARCH AND USER SURVEYS</h4>
-
-                    <p>Before moving into designing, I started with market research and user surveys, which gave me a better grasp on my target demographic. Many of the users I surveyed had studied languages using apps before, but found that language exchange apps like Tandem could be very intimidating. These surveys gave me a good idea of some pain points that could be addressed.</p>
-
-                    <h4>USER PERSONAS AND USER JOURNEY MAPS</h4>
-
-                    <p>After doing my market research and surveying possible users, I created in-depth user profiles that covered a wide range of customer demographics. By creating these profiles, I had a basis to work with and knew who I was making the improvements to the app for.</p>
-
-                    <p>After the user profiles, I assigned each one to a task. By creating these user journey maps, I was able to identify any pain points a user might run into while navigating the app. Overall I found that many important pages were either hard to find, or they had multiple different sections that made navigation difficult.</p>
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="image-left">
-                    <img src="images/tandem_goals.png" alt="Tandem app goals map">
-                </div>
-
-                <div class="text-right">
-                    <h4>GOALS</h4>
-
-                    <p>My main goals for this redesign were:</p>
-
-                    <ul>
-                        <li>Make conversation more inviting and less intimidating through conversation prompts and in-depth user profiles</li>
-                        <li>Make finding a language partner easier through better matching and easier more user-friendly navigation</li>
-                        <li>Make the user-interface clearer and more consistent</li>
-                        <li>Make the profile page easier to navigate and update</li>
-                        <li>Make photo uploads more useful and substantial</li>
-                    </ul>
-
-                    <p>By mapping out my goals for this project, I was able to determine what features and adjustments were the most important. These goals allowed me to redesign the app to be the best fit for the users.</p>
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <h2>WIREFRAMING</h2>
-
-                <!-- row -->
-                <div class="image-left-half">
-                    <img src="images/tandem_lofi_wireframes1.jpeg" alt="Lo-fi wireframes">
-                </div>
-
-                <div class="image-right-half">
-                    <img src="images/tandem_lofi_wireframes2.jpeg" alt="Lo-fi wireframes">
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="image-left">
-                    <img src="images/tandem_final_wireframes.png" alt="High-fidelity wireframes">
-                </div>
-
-                <div class="text-right">
-                    <h4>LOW-FIDELITY WIREFRAMES</h4>
-
-                    <p>I went through many iterations of wireframes for each page in order to find a layout that worked best for the user's needs. I foucsed on limiting the number of paths users could take to one option, as well as limiting the number of options they had, in order to reduce overwhelm while using the app.</p>
-
-                    <h4>HIGH-FIDELITY WIREFRAMES</h4>
-
-                    <p>The community tab and profiles are the most crucial elements for making the app feel more inviting. Regarding chatting, message prompts could assist users in starting conversations; providing users with a preview of their partner’s chat preferences at the beginning could help them get a sense of how the conversation might unfold. In the community tab, allowing users to see their compatibility based on profile preferences could expedite partner matching, along with the use of filters.</p>
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <h2>PROTOTYPING</h2>
-
-                <!-- row -->
-                <div class="image-left">
-                    <img src="images/tandem_lofi_prototype.png" alt="Lo-Fi prototype">
-                </div>
-
-                <div class="text-right">
-                    <h4>LOW-FIDELITY PROTOTYPE</h4>
-
-                    <p>Going back to my main goals for this redsign, and using the wireframes I created, I worked to create a very clean and accessible app. I started by creating and prototyping some very simple navigation. The profile page was moved from various different tabs to its own section. On the community tab, I opted for a top nav for the location selection rather than a drop-down menu like I had originally planned in my wireframes.</p>
-
-                    <p></p>
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="image-left">
-                    <img src="images/tandem_hifi_prototype.png" alt="Hi-fi prototype">
-                </div>
-
-                <div class="text-right">
-                    <h4>FINAL PROTOTYPE</h4>
-
-                    <p>After some usability testing on my lo-fi prototype, I created the final app prototype you see here. I utilized the same color palette used in the original app, with the bright turquoise as my main secondary color. I limited the number of buttons available on the user's personal profile page, as some of them were found to be obsolete through testing. For a cleaner look, I minimized the number of drop shadows I had used in the lo-fi prototype. This sleek and clutter-free design reduces the overwhelm that users, especially those using the app for the first time, might feel.</p>
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <h2>BEFORE AND AFTER</h2>
-
-                <div class="image-left-half">
-                    <img src="images/tandem_app_screenshots.png" alt="Tandem App Screenshots" style="object-fit: contain;">
-                </div>
-
-                <div class="image-right-half">
-                    <img src="images/tandem_final.png" alt="Final Tandem App Design" style="object-fit: contain;">
-                </div>
-
-                    <div class="clearfix"></div>
             </div>
-
-
         </main>
 
-        <!-- footer -->
+        <div class="mobile">
+            <h1>Tandem</h1>
+            <img class="large_image" src="images/tandem_final.png" alt="">
+            <p>Tandem is a language exchange app that aims to bring users together to share their native languages and assist others in learning. In this app redesign, I am exploring how app navigation and accessibility can reduce overwhelm. Additionally, further personalization can help users feel safe and welcomed while navigating the world of language learning.</p>
+            <p>View the full case study <a href="documents/tandem_casestudy.pdf">here</a></p>
+
+            <img class="large_image" src="images/tandem_app_screenshots.png" alt="">
+            <h2>The Problem</h2>
+            <p>Tandem's app offers great potential for users to have a wonderful learning experience. The app allows users to quickly match with a native speaker and share their own language with others. Upon interviewing users of the app, I found that many of them felt the app could be intimidating and hard to navigate.</p>
+
+            <p>Starting a conversation with a stranger can be intimidating and overwhelming for some users. My redesign of this app focuses on how we can limit the fear around these conversations, and help users feel more welcomed within the language sharing community.</p>
+            
+            <img class="large_image" src="images/tandem_userjourney.png" alt="">
+            <img class="large_image" src="images/tandem_goals.png" alt="" >
+
+            <p>Another prominent concern users voiced was a difficult navigation scheme. Many felt that navigating finding a partner can be quite difficult. Some users also voiced that navigating their user profile and editing/updating could be very difficult as well.</p>
+
+            <img class="large_image" src="images/tandem_final_wireframes.png" alt="" >
+            <img class="large_image" src="images/tandem_lofi_prototype.png" alt="" >
+            <img class="large_image" src="images/tandem_hifi_prototype.png" alt="" >
+
+            <div class="clearfix"></div>
+
+            <h2>My Process</h2>
+            <p>For this project, I began with user surveys. As stated above, many users felt the app structure and the idea of meeting new people could be intimidating and hard to navigate. After receiving this feedback, I started planning. Based on my goals and research, I started creating wireframes to plan how I wanted the app to look. From there, I began the protoyping process, utilizing user testing to ensure the app met the needs of those who would be using it.</p>
+        </div>
+
+        <div class="clearfix"></div>
+
         <footer>
-            <p>Copyright &copy; 2023 Peyton Wood</p>
+            <p>Copyright &#169; 2023 Peyton Wood</p>
         </footer>
 
-    <!-- end wrapper -->
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/script.js"></script>
     </div>
-
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/script.js"></script>
-
 </body>
 
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humm</title>
 
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/new_style.css">
 
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
@@ -13,142 +13,107 @@
 </head>
 
 <body>
-
-    <!-- wrapper -->
     <div id="wrapper">
 
-        <!-- header -->
+        <!-- header and nav -->
         <header>
-            <!-- name -->
             <div class="name">
-                <h3><a href="index.html">Peyton Wood</a></h3>
+                <a href="index.html"><h1>Peyton Wood</h1></a>
             </div>
 
-            <!-- nav -->
             <nav>
                 <ul>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="index.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="illustration.html">Illustration</a></li>
+                    <li><a href="index.html">Graphic Design</a></li>
                 </ul>
             </nav>
 
             <!-- hamburger nav -->
             <div class="mobile-nav">
                 <i class="fa-solid fa-bars fa-xl" style="color: #000000;" id="hamburger-menu"></i>
-            </div>
+                
+                <div class="clearfix"></div>
 
-            <div class="clearfix"></div>
-
-            <div class="mobile-nav-links">
-                <a href="index.html">PORTFOLIO</a>
-                <a href="about.html">ABOUT</a>
+                <div class="mobile-nav-links">
+                    <a href="index.html">GRAPHIC DESIGN</a>
+                    <a href="illustration.html">ILLUSTRATION</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
             </div>
-            
         </header>
 
         <div class="clearfix"></div>
 
-        <!-- main -->
         <main>
-            <!-- intro -->
-            <div class="project-intro">
-                <!-- text -->
-                <div class="intro-text">
-                    <h1>Humm.</h1>
+            <div class="outer_grid">
+                <div class="project_text">
+                    <h1>Humm Kombucha</h1>
+                    <p>I'm excited to share my label redesign project for Humm, a kombucha brand that started in Bend, Oregon. Humm's mission is to make a delicious and healthy kombucha that everyone can enjoy, and that you can find it at your local grocery stores. This concept project allowed me to explore branding, illustration, package design, and the world of creating food labels.</p>
 
-                    <p>
-                        I'm excited to share my label redesign project for Humm, a kombucha brand that started in Bend, Oregon. Humm's mission is to make a delicious and healthy kombucha that everyone can enjoy, and that you can find it at your local grocery stores. This concept project allowed me to explore branding, illustration, package design, and the world of creating food labels.
-                    </p>
-
-                    <div class="clearfix"></div>
-                </div>
-
-                <!-- image -->
-                <div class="intro-img">
-                    <img src="images/humm_cooler.png" alt="Humm bottles in a cooler">
-                </div>
-
-                    <div class="clearfix"></div>
-            </div>
-
-            <div class="project">
-                <!-- row -->
-                <div class="image-left-half">
-                    <img src="images/humm_pinkbottle.png" alt="Humm bottle with pink label">
-                </div>
-
-                <div class="image-right-half">
-                    <img src="images/humm_greenbottle_close.png" alt="Humm bottle with green label">
-                </div>
-
-                <!-- row -->
-                <div class="text-left">
-                    <h4>THE BRAND</h4>
-
-                    <p>Humm is a kombucha brand that was founded in 2008 in Bend, Oregon. When researching Humm's audience and brand values, I found that their goal is to reach those who may not normally drink kombucha, and who may stumble upon it in their local grocery store or gas station. Many of Humm's competitors have a very medicinal or spiritiual brand identity, and I wanted to counteract that through my label design.
-                    </p>
-
-                </div>
-
-                <div class="image-right">
-                    <img src="images/humm_cooler_close.png" alt="Close photo of kombucha bottles in a cooler">
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="image-left">
-                    <img src="images/humm_pinkbottle_close.png" alt="Close up photo of the back of a kombucha bottle">
-                </div>
-
-                <div class="text-right">
-                    <h4>PROBLEM AND SOLUTION</h4>
-
+                    <h2>Problem and Solution</h2>
                     <p>Humm's original label consisted of illustration, typography, and photography. In my redesign, I narrowed these elements down to the illustration. I chose a sun illustration they had used on some of their bottles and turned it into a character that could later be used as a mascot in their branding. I kept the color schemes relatively the same, opting for bright and fun colors to make the product seem more like a fun and healthy alternative to soda.</p>
-                </div>
 
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="image-left-half">
-                    <img src="images/humm_moodboard.png" alt="Moodboard for Humm design">
-                </div>
-
-                <div class="image-right-half">
-                    <img src="images/humm_sketches.png" alt="Sketches for Humm design">
-                </div>
-
-                    <div class="clearfix"></div>
-
-                <!-- row -->
-                <div class="text-left">
-                    <h4>MY PROCESS</h4>
-
+                    <h2>My Process</h2>
                     <p>I started by creating a mood board and doing some brand reasearch. From there, I moved on to doing some basic thumbnail sketches to get my ideas on paper. After a thorough critique from my peers, I narrowed my sketches down and tried out some different color schemes. After more feedback, I worked on my digital compositions, creating my final label.</p>
                 </div>
 
-                <div class="image-right">
-                    <img src="images/humm_greenbluelabel_front.png" alt="Front label for green and blue bottles">
-                </div>
+                <!-- inner grid contains images - float right, width: 2fr -->
+                <div class="inner_grid">
+                    <!-- images should have bottom padding of 10px -->
+                    <img class="large_image" src="images/humm_cooler_close.png" alt="">
+                    <!-- small images: width - 40%, padding left/right = 5px -->
+                    <img class="small_image_left" src="images/humm_pinkbottle_close.png" alt="">
+                    <img class="small_image_right" src="images/humm_greenlabel_close.png" alt="">
 
                     <div class="clearfix"></div>
 
+                    <img class="large_image" src="images/humm_sketches.png" alt="">
+
+                    <img class="small_image_left" src="images/humm_pinklabel_front.png" alt="">
+                    <img class="small_image_right" src="images/humm_pinklabel_back.png" alt="">
+
+                    <div class="clearfix"></div>
+
+                    <img class="large_image" src="images/humm_cooler.png" alt="">
+                </div>
             </div>
-
-
         </main>
 
-        <!-- footer -->
-        <footer>
-            <p>Copyright &copy; 2023 Peyton Wood</p>
-        </footer>
+        <div class="clearfix"></div>
 
-    <!-- end wrapper -->
+        <div class="mobile">
+            <h1>Humm Kombucha</h1>
+            <img class="large_image" src="images/humm_cooler_close.png" alt="">
+            <p>I'm excited to share my label redesign project for Humm, a kombucha brand that started in Bend, Oregon. Humm's mission is to make a delicious and healthy kombucha that everyone can enjoy, and that you can find it at your local grocery stores. This concept project allowed me to explore branding, illustration, package design, and the world of creating food labels.</p>
+
+            <img class="small_image_left" src="images/humm_pinkbottle_close.png" alt="">
+            <img class="small_image_right" src="images/humm_greenlabel_close.png" alt="">
+            <div class="clearfix"></div>
+
+            <h2>Problem and Solution</h2>
+            <p>Humm's original label consisted of illustration, typography, and photography. In my redesign, I narrowed these elements down to the illustration. I chose a sun illustration they had used on some of their bottles and turned it into a character that could later be used as a mascot in their branding. I kept the color schemes relatively the same, opting for bright and fun colors to make the product seem more like a fun and healthy alternative to soda.</p>
+
+            <img class="large_image" src="images/humm_sketches.png" alt="">
+
+            <h2>My Process</h2>
+            <p>I started by creating a mood board and doing some brand reasearch. From there, I moved on to doing some basic thumbnail sketches to get my ideas on paper. After a thorough critique from my peers, I narrowed my sketches down and tried out some different color schemes. After more feedback, I worked on my digital compositions, creating my final label.</p>
+
+            <img class="small_image_left" src="images/humm_pinklabel_front.png" alt="">
+            <img class="small_image_right" src="images/humm_pinklabel_back.png" alt="">
+
+            <div class="clearfix"></div>
+
+            <img class="large_image" src="images/humm_cooler.png" alt="">
+        </div>
+
+        <footer>
+            <p>Copyright &#169; 2023 Peyton Wood</p>
+        </footer>
     </div>
 
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
