@@ -194,3 +194,23 @@ document.querySelectorAll('nav a').forEach(link => {
     link.style.textDecoration = 'underline';
   }
 });
+
+// ── MOBILE COLOR SWATCH TAP ──
+if (window.matchMedia('(pointer: coarse)').matches) {
+  document.querySelectorAll('.swatch').forEach(swatch => {
+    swatch.addEventListener('click', () => {
+      const info = swatch.querySelector('.swatch-info');
+      const isVisible = info.style.opacity === '1';
+      
+      // close all others first
+      document.querySelectorAll('.swatch-info').forEach(el => {
+        el.style.opacity = '0';
+      });
+
+      // toggle this one
+      if (!isVisible) {
+        info.style.opacity = '1';
+      }
+    });
+  });
+}

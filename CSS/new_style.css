@@ -1261,3 +1261,13 @@ main .outer_grid .inner_grid .cutout {
   }
 
 }
+
+@media (pointer: coarse) {
+  .swatch-info {
+    transition: opacity 0.2s ease;
+  }
+
+  .swatch:active .swatch-info {
+    opacity: 1;
+  }
+}
