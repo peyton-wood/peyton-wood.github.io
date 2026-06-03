@@ -1,6 +1,4 @@
-jQuery(document).ready(function() {
-  // intentionally empty
-});
+
 
 // ── LIGHTBOX ──
 const overlay = document.createElement('div');
