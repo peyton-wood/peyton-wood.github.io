@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <style>
+    .mobile-nav-links {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+    }
+
+    .mobile-nav-links.open {
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <button id="hamburger-menu" style="position: relative; z-index: 9999;">OPEN</button>
+
+  <div class="mobile-nav-links" id="mobile-nav-links">
+    <a href="#">Link One</a>
+  </div>
+
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const mobileLinks = document.getElementById('mobile-nav-links');
+
+    hamburger.addEventListener('click', () => {
+  mobileLinks.classList.toggle('open');
+});
+  </script>
+
+</body>
+</html>

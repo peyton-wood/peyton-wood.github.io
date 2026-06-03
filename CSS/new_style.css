@@ -1,16 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=Kameron:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
 
 * {
     box-sizing: border-box;
+    cursor: none;
+}
+
+.cursor {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: none; /* JS handles the smoothing */
 }
 
 body {
-    font-family: 'Kameron', serif;
+    font-family: 'Roboto Condensed', serif;
+    /* background-color: #f1f1f1; */
+    background-color: #eae9e5;
+    /* color: #242b64; */
+    color: #0B1215;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+body.lightbox-open {
+  overflow: hidden;
 }
 
 #wrapper {
     width: 100%;
-    padding: 0 2%;
+    padding: 0 6%;
 }
 
 .clearfix {
@@ -18,9 +45,9 @@ body {
 }
 
 /* header image and text */
-#header_image {
+/* #header_image {
     margin: auto;
-    width: 50%;
+    width: 70%;
     padding-top: 3%;
     padding-bottom: 4%;
 }
@@ -31,48 +58,51 @@ body {
 }
 
 #header_image h1 {
-    font-family: 'Edu SA Beginner', sans-serif;
+    font-family: 'Cuprum', sans-serif;
     font-weight: 100;
     text-transform: uppercase;
     font-size: 20px;
     text-align: center;
     margin-top: -10px;
-}
+} */
 
 /* header w/ nav */
 header {
     width: 100%;
-    padding: 0 0 7px 0;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    height: 3%;
-    background-color: white;
+    padding: 0 6% 7px 6%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 6%;
+    background-color: #eae9e5;
     display: flex;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 header .name {
     width: 50%;
     float: left;
-    height: 3%;
+    height: 4%;
+    padding-top: 0.5%;
 }
 
 header .name a {
-    color: black;
+    color: #0B1215;
     text-decoration: none;
 }
 
 header .name a h1 {
-    font-family: 'Edu SA Beginner', sans-serif;
-    font-weight: bold;
+    font-family: 'Geist Mono', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
-    font-size: 18px;
-    color: black;
+    font-size: 20px;
+    color: #0B1215;
+    letter-spacing: 1px;
 }
 
 header nav {
     width: 50%;
-    float: right;
+    padding-top: 0.5%;
 }
 
 header nav ul {
@@ -85,12 +115,14 @@ header nav ul li {
 
 header nav ul li a {
     display: block;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 40px;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Edu SA Beginner', sans-serif;
+    font-family: 'Geist Mono', sans-serif;
     font-size: 18px;
-    color: black;
+    color: #0B1215;
+    letter-spacing: 1px;
+    font-weight:300;
 }
 
 header nav ul li a:hover {
@@ -99,79 +131,356 @@ header nav ul li a:hover {
 
 /* hamburger menu */
 .mobile-nav {
-    display: none;
+  display: none;
 }
 
-.mobile-nav-links {
-    display: none;
+.home-intro {
+  display: none;
 }
 
+.project_link {
+  background-size: cover;
+  transition: background-size 0.6s ease, opacity 0.3s ease, transform 0.5s ease;
+}
 
+.project_link {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
+.project_link.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* use a pseudo element for the zoom so it doesn't affect the overlay */
+.project_link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.project_link:hover::before {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  z-index: 1; /* sit above the zooming bg */
+}
+
+.project_link {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.project_link:hover .project-overlay {
+  background: rgba(0,0,0,0.45);
+}
+
+.project-category {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-family: 'Geist Mono', sans-serif;
+}
+
+.project-title {
+  font-size: 20px;
+  font-family: 'Geist Mono', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
+}
+
+.project_link:hover .project-category,
+.project_link:hover .project-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── ILLUSTRATION GRID ── */
+.illus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-bottom: 3rem;
+}
+
+.illus-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.illus-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.illus-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+  cursor: zoom-in;
+}
+
+.illus-item:hover img {
+  transform: scale(1.05);
+}
+
+.illus-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  transition: background 0.3s ease;
+}
+
+.illus-item:hover .illus-overlay {
+  background: rgba(0,0,0,0.45);
+}
+
+.illus-overlay span {
+  font-family: 'Geist Mono', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: white;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.illus-item:hover .illus-overlay span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── MOBILE ── */
+@media only screen and (max-width: 768px) {
+  .illus-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
 
 /* illustration image popup */
-.popup {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgba(0,0,0,0.6);
-    visibility: hidden;
-    z-index: 2;
+/* The dark overlay */
+.lightbox-trigger {
+  width: 100%;
+  display: block;
 }
 
-.popup img {
-    object-fit: contain;
-    max-height: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    cursor: zoom-out;
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 1000;
+  cursor: zoom-out;
+
+  /* centers the image */
+  justify-content: center;
+  align-items: center;
 }
 
-.open-popup {
-    visibility: visible;
+.lightbox-overlay.active {
+  display: flex;
 }
+
+/* The expanded image */
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+
+  /* subtle pop-in animation */
+  animation: lightbox-in 0.2s ease;
+}
+
+@keyframes lightbox-in {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+/* Close button */
+.lightbox-close {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover { opacity: 1; }
 
 /* main project nav */
 main {
     width: 100%;
+    padding-top: 3%;
+}
+
+main .intro{
+    width: 30%;
+    padding-right: 100px;
+    position: sticky;
+    top: 7%;
+    float: left;
+}
+
+main .intro h1{
+    font-size: 36px;
+    font-weight: 100;
+}
+
+main .intro p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.home-hero {
+  padding: 3rem 0 2rem;
+}
+
+.hero-tag {
+  font-size: 12px;
+  font-family: 'Geist Mono', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: gray;
+  margin-bottom: 0.75rem;
+}
+
+.hero-statement {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 300;
+  line-height: 1.2;
+  max-width: 700px;
+  font-family: 'Geist Mono', sans-serif;
+  letter-spacing: -0.02em;
 }
 
 main .grid{
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
 }
 
 main .grid .project_link {
     width: 100%;
-    height: 40vh;
+    aspect-ratio: 1/1;
     color: black;
-    background-color: #cccccc;
+    background-color: #a3a3a3;
     text-decoration: none;
 }
 
-main .grid .project_link h2 {
-    text-align: center;
-    height: 100%;
-    margin: auto;
-    padding-top: 30%;
-    font-size: 24px;
-    font-family: 'Edu SA Beginner', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    opacity: 0;
-    color: white;
-    text-shadow: black 1px 0 10px;
+.project_link {
+  background-size: cover;
+  transition: background-size 0.6s ease, opacity 0.3s ease, transform 0.5s ease;
 }
 
-main .grid .project_link h2:hover {
-    opacity: 100;
-    transition-duration: 0.4s;
+/* use a pseudo element for the zoom so it doesn't affect the overlay */
+.project_link::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.project_link:hover::before {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  z-index: 1; /* sit above the zooming bg */
+}
+
+.project_link {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.project_link:hover .project-overlay {
+  background: rgba(0,0,0,0.45);
+}
+
+.project-category {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-family: 'Geist Mono', sans-serif;
+}
+
+.project-title {
+  font-size: 20px;
+  font-family: 'Geist Mono', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
+}
+
+.project_link:hover .project-category,
+.project_link:hover .project-title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 main .grid a:hover {
@@ -180,53 +489,109 @@ main .grid a:hover {
 
 main .grid div:hover {
     background-blend-mode: multiply;
+    
+}
+
+main .bottom-nav {
+    padding-top: 40px;
+    width: 100%;
+}
+
+main .bottom-nav .left-link {
+    width: 50%;
+    float: left;
+}
+
+main .bottom-nav .right-link {
+    width: 50%;
+    float: right;
+}
+
+/* bottom nav links */
+main .bottom-nav a {
+    text-decoration: none;
+}
+
+main .bottom-nav .left-link h3 {
+    font-size: 18px;
+    font-family: 'Geist Mono', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+main .bottom-nav .right-link h3 {
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Geist Mono', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
 }
 
 .mobile {
     display: none;
 }
 
-/* about page */
+/* ── ABOUT PAGE ── */
 main .about {
-    padding-top: 10vh;
-    margin: auto;
-    width: 70%;
-}
-
-main .about_info {
-    float: left;
-    width: 70%;
-    height: 60vh;
-    padding-left: 60px;
-}
-
-main .about_info h1 {
-    font-size: 40px;
-    font-family: 'Edu SA Beginner', sans-serif;
-    text-transform: uppercase;
-    font-weight: 100;
-}
-
-main .about_info p {
-    font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: start;
+  padding-top: 3%;
 }
 
 main .about_img {
-    float: left;
-    width: 30%;
-    height: 60vh;
+  position: sticky;
+  top: 8%;
 }
 
 main .about_img img {
-    width: 100%;
-    float: left;
-    border-radius: 50%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+main .about_info h1 {
+  font-size: 40px;
+  font-family: 'Geist Mono', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+main .about_info h2 {
+  font-size: 16px;
+  font-family: 'Geist Mono', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 2rem 0 0.5rem;
+  padding-top: 0;
+}
+
+main .about_info p {
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+main .about_info a {
+  color: #0B1215;
+  text-decoration: underline;
+}
+
+main .about_info a:hover {
+  opacity: 0.5;
 }
 
 /* footer */
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 
@@ -241,48 +606,108 @@ main .outer_grid {
 }
 
 /* project text */
+.meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-top: 0.5px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
+  margin: 1.5rem 0;
+  font-size: 18px;
+}
+.meta-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: gray;
+  display: block;
+  margin-bottom: 2px;
+}
+.meta-divider { color: #ddd; }
+
+
 main .outer_grid .project_text {
     position: sticky;
-    top: 4%;
-    width: 100%;
+    top: 8%;
+    width: 90%;
     
 }
 
 main .outer_grid .project_text h1 {
-    font-size: 40px;
-    font-family: 'Edu SA Beginner', sans-serif;
+    font-size: 50px;
+    font-family: 'Geist Mono', sans-serif;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 main .outer_grid h2 {
-    font-size: 20px;
-    font-family: 'Edu SA Beginner', sans-serif;
+    font-size: 24px;
+    font-family: 'Geist Mono', sans-serif;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    font-weight: 100;
+    font-weight: 300;
     padding-top: 20px;
 }
 
 main .outer_grid .project_text p {
-    font-size: 16px;
+    font-size:20px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: 80%;
 }
 
-main .outer_grid .project_text table tr td {
-    padding-right: 20px;
-    padding-top: 5px;
+.team-credits {
+  margin: 1.5rem 0;
+  border-top: 0.5px solid #ddd;
+  padding-top: 1rem;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0.6rem 0;
+  border-bottom: 0.5px solid #eee;
+}
+
+.team-name {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Geist Mono', sans-serif;
+}
+
+.team-role {
+  font-size: 13px;
+  color: gray;
+}
+
+.page-mascot {
+    width: 70%;
+  margin-top: 3rem;
+  filter: drop-shadow(7px 7px 3px rgba(0,0,0,0.1));
 }
 
 /* project images */
+main .outer_grid .inner_grid {
+    position: relative;
+}
+
+main .outer_grid .inner_grid p {
+    font-size:20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
 main .outer_grid .inner_grid .large_image {
     width: 100%;
-    padding-bottom: 10px;
 }
 
 main .outer_grid .inner_grid .small_image_left {
     width: 50%;
     float: left;
-    padding-right: 5px;
-    padding-bottom: 10px;
     height: 50vh;
     object-fit: cover;
 }
@@ -290,280 +715,549 @@ main .outer_grid .inner_grid .small_image_left {
 main .outer_grid .inner_grid .small_image_right {
     width: 50%;
     float: right;
-    padding-left: 5px;
-    padding-bottom: 10px;
     height: 50vh;
     object-fit: cover;
 }
 
-
-
-
-/* tablet */
-@media only screen and (max-width:1024px) {
-    header .name {
-        width: 20%;
-    }
-    
-    header .name a h1 {
-        font-size: 24px;
-    }
-
-    header nav {
-        width: 80%;
-    }
-
-    header nav ul li a {
-        font-size: 24px;
-    }
-    
-    
-    main .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    main .grid .project_link {
-        height: 25vh;
-    }
-
-    main .about {
-        width: 100%;
-        padding-top: 5vh;
-    }
-
-    main .outer_grid {
-        display: none;
-    }
-
-    .popup img {
-        max-width: 80%;
-    }
-
-    .mobile {
-        width: 100%;
-        display: initial;
-    }
-
-    .mobile h1 {
-        width: 100%;
-        font-size: 30px;
-        font-family: 'Edu SA Beginner', sans-serif;
-        text-transform: uppercase;
-        font-weight: 100;
-    }
-
-    .mobile h2 {
-        width: 100%;
-        font-size: 26px;
-        font-family: 'Edu SA Beginner', sans-serif;
-        text-transform: uppercase;
-        font-weight: 100;
-    }
-
-    .mobile p {
-        font-size: 24px;
-        padding: 5px 0px;
-    }
-
-    .mobile table tr td {
-        font-size: 24px;
-    }
-
-    .mobile .large_image {
-        width: 100%;
-        object-fit: cover;
-    }
-
-    .mobile .small_image_left {
-        float: left;
-        width: 50%;
-        padding-right: 5px;
-        object-fit: cover;
-        height: 30vh;
-    }
-
-    .mobile .small_image_right {
-        float: right;
-        width: 50%;
-        padding-left: 5px;
-        object-fit: cover;
-        height: 30vh;
-    }
-    
+main .outer_grid .inner_grid .cutout {
+  position: absolute;
+  z-index: 1;    /* sits on top of everything */
+  filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.25));
 }
 
-/* phone - landscape */
-@media only screen and (max-width:932px) {
-    main .grid .project_link {
-        width: 100%;
-        height: 70vh;
+/* Color Palette */
+    .palette-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    padding: 2rem 0;
     }
 
-    header .name a h1 {
-        font-size: 18px;
+    .swatch-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 22.75%;
     }
 
-    header nav ul li a {
-        font-size: 18px;
+    .swatch {
+    width: 100%;
+    aspect-ratio: 1 / 1;  /* keeps it a perfect circle */
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.2s ease;
     }
 
-    .mobile .small_image_left {
-        height: 70vh;
+    .swatch:hover {
+    transform: scale(1.1);
     }
 
-    .mobile .small_image_right {
-        height: 70vh;
+    .swatch-info {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    background: rgba(0,0,0,0.55);
     }
 
-    .mobile p {
-        font-size: 16px;
+    .swatch:hover .swatch-info {
+    opacity: 1;
     }
+
+    .swatch-info span {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 0 6px;
+    }
+
+    .swatch-name {
+    font-size: 18px;
+    color: gray;
+    }
+
+    @media (pointer: fine) {
+  * { cursor: none; }
 }
 
+/* ── TABLET (max 1024px) ── */
+@media only screen and (max-width: 1024px) {
 
-/* phone */
-@media only screen and (max-width:768px) {
-    main .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  header .name { width: 50%; }
+  header .name a h1 { font-size: 18px; }
+  header nav { width: 50%; }
+  header nav ul li a { font-size: 16px; }
 
-    #header_image {
-        width: 100%;
-    }
-    
-    #header_image h1 {
-        font-size: 16px;
-        margin-top: 0px;
-    }
+  main .grid { grid-template-columns: repeat(2, 1fr); }
+  main .outer_grid { display: none; }
 
-    header .mobile-nav {
-        display: block;
-        width: 40%;
-        float: right;
-        
-    }
+  .mobile {
+    display: block;
+    width: 100%;
+    margin-top: 8%;
+    padding-bottom: 4rem;
+  }
 
-    header .mobile-nav #hamburger-menu {
-        float: right;
-        padding-top: 25px;
-    }
+  .mobile h1 {
+    font-size: 32px;
+    font-family: 'Geist Mono', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
 
-    header .mobile-nav-links {
-        width: 100%;
-        padding-top: 15px;
-    }
+  .mobile h2 {
+    font-size: 18px;
+    font-family: 'Geist Mono', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0;
+  }
 
-    header .mobile-nav-links a {
-        display: block;
-        padding: 5px 0px 5px 0;
-        text-align: right;
-        text-decoration: none;
-        color: black;
-        font-family: 'Edu SA Beginner', sans-serif;
-        background-color: white;
-        float: none;
-    }
+  .mobile p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 300;
+    margin: 0.75rem 0 1.25rem;
+  }
 
-    header nav {
-        display: none;
-    }
+    .illus-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
 
-    header {
-        height: 5vh;
-        width: 100%;
-    }
+  .home-hero {
+    display: block;
+    padding: 2rem 0 1.5rem;
+    margin-top: 8%;
+  }
 
-    header .name {
-        width: 60%;
-        float: left;
-        height: auto;
-    }
+  .home-hero .hero-tag {
+    font-size: 11px;
+    font-family: 'Geist Mono', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: gray;
+    margin-bottom: 0.5rem;
+  }
 
-    header .name a h1 {
-        font-size: 17px;
-        width: 100%;
-    }
+  .home-hero .hero-statement {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 300;
+    line-height: 1.3;
+    font-family: 'Geist Mono', sans-serif;
+  }
 
-    .popup img {
-        max-width: 100%;
-    }
+  .mobile .closing-line {
+    font-size: 15px;
+    color: gray;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid #ddd;
+  }
 
-    main .grid .project_link {
-        width: 100%;
-        height: 30vh;
-    }
+  .mobile .large_image {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    object-fit: cover;
+  }
+
+  /* two column image grid */
+  .mobile-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .mobile-two-col img {
+    width: 100%;
+    height: 28vw;
+    object-fit: cover;
+    display: block;
+    cursor: zoom-in;
+  }
+
+  /* color palette — 2x2 on tablet */
+  .mobile .palette-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 1rem 0 1.5rem;
+  }
+
+  .mobile .swatch-card {
+    width: 100%;
+  }
+
+  .mobile .swatch {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+  }
+
+  .mobile .swatch-info span {
+    font-size: 14px;
+  }
+
+  /* meta strip */
+  .mobile .meta-strip {
+    font-size: 14px;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    gap: 8px;
+  }
+
+  .mobile .meta-label {
+    font-size: 10px;
+  }
 
     main .about {
-        width: 100%;
-    }
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 8%;
+  }
 
-    main .about_info {
-        float: none;
-        width: 100%;
-        height: auto;
-        padding-left: 0px;
-    }
+  main .about_img {
+    position: relative;
+    top: 0;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+/* ── PHONE (max 768px) ── */
+@media only screen and (max-width: 768px) {
     
-    main .about_info h1 {
-        font-size: 30px;
-        font-family: 'Edu SA Beginner', sans-serif;
-        text-transform: uppercase;
-        font-weight: 100;
-    }
-    
-    main .about_info px{
-        font-size: 16px;
-    }
-    
-    main .about_img {
-        float: none;
-        width: 70%;
-        height: auto;
-        margin: auto;
-    }
-    
-    main .about_img img {
-        width: 100%;
-        float: none;
-        object-position: center;
-    }
 
-    main .outer_grid {
-        display: none;
-    }
+  /* nav */
+  header {
+    height: auto;
+    padding: 12px 5%;
+    align-items: center;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  }
 
-    .mobile h1 {
-        font-size: 24px;
-    }
+  header .name {
+    width: 65%;
+    float: left;
+    padding-top: 0;
+  }
 
-    .mobile h2 {
-        font-size: 18px;
-    }
+  header .name a h1 {
+    font-size: 15px;
+  }
 
-    .mobile p {
-        font-size: 14px;
-    }
+  header nav {
+    display: none;
+  }
 
-    .mobile table {
-        table-layout: auto;
-        width: 100%;
-    }
+  .mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
 
-    .mobile table tr td {
-        font-size: 14px;
-    }
+/* the button itself */
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 32px;
+}
 
-    .mobile .small_image_left {
-        float: none;
-        width: 100%;
-        padding-right: 0px;
-        height: 30vh;
-    }
+/* the three lines */
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: #0B1215;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
 
-    .mobile .small_image_right {
-        float: none;
-        width: 100%;
-        padding-left: 0px;
-        height: 30vh;
-    }
+/* animate to X when open */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+/* the dropdown panel */
+.mobile-nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: #eae9e5;
+  
+  /* hide using transform instead of display */
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.mobile-nav-links.open {
+  transform: translateY(0);
+}
+
+.mobile-nav-links a {
+  font-family: 'Geist Mono', sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #0B1215;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.mobile-nav-links a:hover {
+  opacity: 0.5;
+}
+
+/* close button inside the overlay */
+.mobile-nav-links .nav-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 6%;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0B1215;
+  font-family: 'Geist Mono', sans-serif;
+}
+
+  /* wrapper */
+  #wrapper {
+    padding: 0 5%;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  /* mobile content */
+  .mobile {
+    margin-top: 60px;
+  }
+
+  .mobile h1 {
+    font-size: 26px;
+    padding-top: 1rem;
+  }
+
+  .mobile h2 {
+    font-size: 15px;
+    margin: 1.75rem 0 0.5rem;
+  }
+
+  .mobile p {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  /* images */
+  .mobile .large_image {
+    margin-bottom: 10px;
+  }
+
+  .mobile-two-col {
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-two-col img {
+    height: 35vw;
+  }
+
+  /* color palette — 2x2 on phone */
+  .mobile .palette-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0.75rem 0 1.25rem;
+  }
+
+  .mobile .swatch-info span {
+    font-size: 11px;
+  }
+
+  /* meta strip wraps on small screens */
+  .mobile .meta-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 13px;
+  }
+
+  .mobile .meta-divider {
+    display: none;
+  }
+
+  /* about page */
+  main .about_info {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  main .about_img {
+    float: none;
+    width: 80%;
+    margin: auto;
+  }
+
+  /* footer */
+  footer {
+    padding: 16px 0;
+    font-size: 13px;
+  }
+
+  .team-credits {
+  margin: 1.5rem 0;
+  border-top: 0.5px solid #ddd;
+  padding-top: 1rem;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0.6rem 0;
+  border-bottom: 0.5px solid #eee;
+}
+
+.team-name {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Geist Mono', sans-serif;
+}
+
+.team-role {
+  font-size: 13px;
+  color: gray;
+}
+
+.section-label {
+  font-size: 11px;
+  font-family: 'Geist Mono', sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: gray;
+  margin: 0 0 0.5rem;
+}
+
+  /* home intro */
+  .illus-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .home-hero {
+    margin-top: 70px;
+    padding: 1.5rem 0 1rem;
+  }
+
+  .home-hero .hero-tag {
+    font-size: 10px;
+  }
+
+  .home-hero .hero-statement {
+    font-size: 1.1rem;
+    line-height: 1.4;
+  }
+
+  /* tap to reveal title on mobile */
+  .illus-item:active .illus-overlay {
+    background: rgba(0,0,0,0.45);
+  }
+
+  .illus-item:active .illus-overlay span {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* grid */
+  main .grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  main .grid .project_link {
+    width: 100%;
+    height: 55vw;
+    border-radius: 4px;
+  }
+
+  main .grid .project_link h2 {
+    font-size: 18px;
+    padding-top: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    opacity: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+  }
+
+  main .grid .project_link:hover h2,
+  main .grid .project_link:active h2 {
+    opacity: 1;
+  }
+
+  /* hide desktop intro if it ever gets uncommented */
+  .home-intro {
+    margin-top: 60px;
+  }
+
+    main .about {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 70px;
+  }
+
+  main .about_img {
+    position: relative;
+    top: 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  main .about_info h1 {
+    font-size: 26px;
+  }
+
+  main .about_info h2 {
+    font-size: 13px;
+  }
+
+  main .about_info p {
+    font-size: 14px;
+  }
+
 }

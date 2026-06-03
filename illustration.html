@@ -3,324 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peyton Wood</title>
+    <title>Illustration — Peyton Wood</title>
 
     <link rel="stylesheet" href="/CSS/new_style.css">
-
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-
     <script src="https://kit.fontawesome.com/7240fc00d9.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Peyton Wood — Graphic designer and illustrator based in Orlando, FL. Specializing in branding, packaging, and UI/UX.">
 </head>
 
 <body>
-    <div id="wrapper">
-        <!-- header image -->
-        <div id="header_image">
-            <img src="images/header_image.png" alt="">
-            <h1>welcome to my portfolio</h1>
+    <header>
+        <div class="name">
+            <a href="index.html"><h1>Peyton Wood</h1></a>
         </div>
 
-        <!-- header and nav -->
-        <header>
-            <div class="name">
-                <a href="index.html"><h1>Peyton Wood</h1></a>
-            </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="index.html">Graphic Design</a></li>
+            </ul>
+        </nav>
 
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="illustration.html">[Illustration]</a></li>
-                    <li><a href="index.html">Graphic Design</a></li>
-                </ul>
-            </nav>
+        <div class="mobile-nav">
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-            <!-- hamburger nav -->
-            <div class="mobile-nav">
-                <i class="fa-solid fa-bars fa-xl" style="color: #000000;" id="hamburger-menu"></i>
-                
-                <div class="clearfix"></div>
+    <div class="mobile-nav-links" id="mobile-nav-links">
+        <button class="nav-close" id="nav-close">✕</button>
+        <a href="index.html">Graphic Design</a>
+        <a href="illustration.html">Illustration</a>
+        <a href="about.html">About</a>
+    </div>
 
-                <div class="mobile-nav-links">
-                    <a href="index.html">GRAPHIC DESIGN</a>
-                    <a href="illustration.html">ILLUSTRATION</a>
-                    <a href="about.html">ABOUT</a>
-                </div>
-            </div>
-        </header>
+    <div class="clearfix"></div>
 
-        <div class="clearfix"></div>
+    <div id="wrapper">
 
         <main>
-            <div class="grid">
-                <div class="project_link" type="submit" onclick="openPopup1()" style="background-image: url('images/illustration/sun.png'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+            <!-- hero intro -->
+            <div class="home-hero">
+                <p class="hero-tag">Illustration</p>
+                <h2 class="hero-statement">Characters, landscapes, and creatures inspired by imagination and storytelling.</h2>
+            </div>
 
-                    <div class="popup" id="popup">
-                        <img src="images/illustration/sun.png" alt="" type="button" onclick="closePopup1()">
-                    </div>
+            <div class="illus-grid">
 
-                <div class="project_link" type="submit" onclick="openPopup2()" style="background-image: url('images/illustration/alice.jpeg'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/sun.png" alt="Sun illustration">
+                    <div class="illus-overlay"><span>Sun</span></div>
+                </div>
 
-                    <div class="popup" id="popup2">
-                        <img src="images/illustration/alice.jpeg" alt="" type="button" onclick="closePopup2()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/bear.png" alt="Bear illustration">
+                    <div class="illus-overlay"><span>Bear</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup3()" style="background-image: url('images/illustration/queenofhearts.png'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/queenofhearts.png" alt="Queen of Hearts">
+                    <div class="illus-overlay"><span>Queen of Hearts</span></div>
+                </div>
 
-                    <div class="popup" id="popup3">
-                        <img src="images/illustration/queenofhearts.png" alt="" type="button" onclick="closePopup3()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/littlewizardgirl.png" alt="Little Wizard Girl">
+                    <div class="illus-overlay"><span>Little Wizard Girl</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup4()" style="background-image: url('images/illustration/veggies.png'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/mermaid.jpg" alt="Mermaid">
+                    <div class="illus-overlay"><span>Mermaid</span></div>
+                </div>
 
-                    <div class="popup" id="popup4">
-                        <img src="images/illustration/veggies.png" alt="" type="button" onclick="closePopup4()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/veggies.png" alt="Veggies">
+                    <div class="illus-overlay"><span>Veggies</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup5()" style="background-image: url('images/illustration/mermaid.jpeg'); background-size: 100%; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/radish.png" alt="Radish">
+                    <div class="illus-overlay"><span>Radish</span></div>
+                </div>
 
-                    <div class="popup" id="popup5">
-                        <img src="images/illustration/mermaid.jpeg" alt="" type="button" onclick="closePopup5()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/squid.jpg" alt="Squid">
+                    <div class="illus-overlay"><span>Squid</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup6()" style="background-image: url('images/illustration/radish.png'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/alice.jpg" alt="Alice">
+                    <div class="illus-overlay"><span>Alice</span></div>
+                </div>
 
-                    <div class="popup" id="popup6">
-                        <img src="images/illustration/radish.png" alt="" type="button" onclick="closePopup6()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/snowycabin.JPG" alt="Snowy Cabin">
+                    <div class="illus-overlay"><span>Snowy Cabin</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup7()" style="background-image: url('images/illustration/squid.jpeg'); background-size: 100%; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/oceanlandscape.jpg" alt="Ocean Landscape">
+                    <div class="illus-overlay"><span>Ocean Landscape</span></div>
+                </div>
 
-                    <div class="popup" id="popup7">
-                        <img src="images/illustration/squid.jpeg" alt="" type="button" onclick="closePopup7()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/deserthouses.jpg" alt="Desert Houses">
+                    <div class="illus-overlay"><span>Desert Houses</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup8()" style="background-image: url('images/illustration/bear.png'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/pumpkinvillage_interior.jpg" alt="Pumpkin Village Interior">
+                    <div class="illus-overlay"><span>Pumpkin Village — Interior</span></div>
+                </div>
 
-                    <div class="popup" id="popup8">
-                        <img src="images/illustration/bear.png" alt="" type="button" onclick="closePopup8()">
-                    </div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/pumpkinvillage_scene.jpg" alt="Pumpkin Village Scene">
+                    <div class="illus-overlay"><span>Pumpkin Village — Scene</span></div>
+                </div>
 
-                <div class="project_link" type="submit" onclick="openPopup9()" style="background-image: url('images/illustration/littlewizardgirl.png'); background-size: 100%; background-position: center; cursor: zoom-in;"><h2></h2></div>
+                <div class="illus-item">
+                    <img class="lightbox-trigger" src="images/illustration/pumpkinvillage_houses.jpg" alt="Pumpkin Village Houses">
+                    <div class="illus-overlay"><span>Pumpkin Village — Houses</span></div>
+                </div>
 
-                    <div class="popup" id="popup9">
-                        <img src="images/illustration/littlewizardgirl.png" alt="" type="button" onclick="closePopup9()">
-                    </div>
-
-                <div class="project_link" type="submit" onclick="openPopup10()" style="background-image: url('images/illustration/snowycabin.JPG'); background-size: 150%; background-position: center; cursor: zoom-in;"><h2></h2></div>
-
-                    <div class="popup" id="popup10">
-                        <img src="images/illustration/snowycabin.JPG" alt="" type="button" onclick="closePopup10()">
-                    </div>
-
-                <div class="project_link" type="submit" onclick="openPopup11()" style="background-image: url('images/illustration/deserthouses.jpeg'); background-size: 150%; background-position: center; cursor: zoom-in;"><h2></h2></div>
-
-                    <div class="popup" id="popup11">
-                        <img src="images/illustration/deserthouses.jpeg" alt="" type="button" onclick="closePopup11()">
-                    </div>
-
-                <div class="project_link" type="submit" onclick="openPopup12()" style="background-image: url('images/illustration/foresthouses.jpeg'); background-size: 150%; background-position: center; cursor: zoom-in;"><h2></h2></div>
-
-                    <div class="popup" id="popup12">
-                        <img src="images/illustration/foresthouses.jpeg" alt="" type="button" onclick="closePopup12()">
-                    </div>
-
-                <div class="project_link" type="submit" onclick="openPopup13()" style="background-image: url('images/illustration/pumpkinvillage_interior.jpg'); background-size: 150%; background-position: center; cursor: zoom-in;"><h2></h2></div>
-
-                    <div class="popup" id="popup13">
-                        <img src="images/illustration/pumpkinvillage_interior.jpg" alt="" type="button" onclick="closePopup13()">
-                    </div>
-
-                <div class="project_link" type="submit" onclick="openPopup14()" style="background-image: url('images/illustration/pumpkinvillage_scene.jpg'); background-size: 150%; background-position: center; cursor: zoom-in;"><h2></h2></div>
-
-                    <div class="popup" id="popup14">
-                        <img src="images/illustration/pumpkinvillage_scene.jpg" alt="" type="button" onclick="closePopup14()">
-                    </div>
-
-                <div class="project_link" type="submit" onclick="openPopup15()" style="background-image: url('images/illustration/pumpkinvillage_houses.jpg'); background-size: 150%; background-position: center; cursor: zoom-in;"><h2></h2></div>
-
-                    <div class="popup" id="popup15">
-                        <img src="images/illustration/pumpkinvillage_houses.jpg" alt="" type="button" onclick="closePopup15()">
-                    </div>
             </div>
         </main>
 
         <div class="clearfix"></div>
 
         <footer>
-            <p>Copyright &#169; 2023 Peyton Wood</p>
+            <p>Copyright &#169; <script>document.write(new Date().getFullYear());</script> Peyton Wood</p>
         </footer>
 
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/script.js"></script>
-
-    <script>
-        // illustration image popups
-        // image 1
-        let popup1 = document.getElementById("popup");
-
-        function openPopup1() {
-            popup1.classList.add("open-popup")
-        }
-
-        function closePopup1() {
-            popup1.classList.remove("open-popup")
-        }
-
-        // image 2
-        let popup2 = document.getElementById("popup2");
-
-        function openPopup2() {
-            popup2.classList.add("open-popup")
-        }
-
-        function closePopup2() {
-            popup2.classList.remove("open-popup")
-        }
-
-        // image 3
-        let popup3 = document.getElementById("popup3");
-
-        function openPopup3() {
-            popup3.classList.add("open-popup")
-        }
-
-        function closePopup3() {
-            popup3.classList.remove("open-popup")
-        }
-
-        // image 4
-        let popup4 = document.getElementById("popup4");
-
-        function openPopup4() {
-            popup4.classList.add("open-popup")
-        }
-
-        function closePopup4() {
-            popup4.classList.remove("open-popup")
-        }
-
-        // image 5
-        let popup5 = document.getElementById("popup5");
-
-        function openPopup5() {
-            popup5.classList.add("open-popup")
-        }
-
-        function closePopup5() {
-            popup5.classList.remove("open-popup")
-        }
-
-        // image 6
-        let popup6 = document.getElementById("popup6");
-
-        function openPopup6() {
-            popup6.classList.add("open-popup")
-        }
-
-        function closePopup6() {
-            popup6.classList.remove("open-popup")
-        }
-
-        // image 7
-        let popup7 = document.getElementById("popup7");
-
-        function openPopup7() {
-            popup7.classList.add("open-popup")
-        }
-
-        function closePopup7() {
-            popup7.classList.remove("open-popup")
-        }
-
-        // image 8
-        let popup8 = document.getElementById("popup8");
-
-        function openPopup8() {
-            popup8.classList.add("open-popup")
-        }
-
-        function closePopup8() {
-            popup8.classList.remove("open-popup")
-        }
-
-        // image 9
-        let popup9 = document.getElementById("popup9");
-
-        function openPopup9() {
-            popup9.classList.add("open-popup")
-        }
-
-        function closePopup9() {
-            popup9.classList.remove("open-popup")
-        }
-
-        // image 10
-        let popup10 = document.getElementById("popup10");
-
-        function openPopup10() {
-            popup10.classList.add("open-popup")
-        }
-
-        function closePopup10() {
-            popup10.classList.remove("open-popup")
-        }
-
-        // image 11
-        let popup11 = document.getElementById("popup11");
-
-        function openPopup11() {
-            popup11.classList.add("open-popup")
-        }
-
-        function closePopup11() {
-            popup11.classList.remove("open-popup")
-        }
-
-        // image 12
-        let popup12 = document.getElementById("popup12");
-
-        function openPopup12() {
-            popup12.classList.add("open-popup")
-        }
-
-        function closePopup12() {
-            popup12.classList.remove("open-popup")
-        }
-
-        // image 13
-        let popup13 = document.getElementById("popup13");
-
-        function openPopup13() {
-            popup13.classList.add("open-popup")
-        }
-
-        function closePopup13() {
-            popup13.classList.remove("open-popup")
-        }
-
-        // image 14
-        let popup14 = document.getElementById("popup14");
-
-        function openPopup14() {
-            popup14.classList.add("open-popup")
-        }
-
-        function closePopup14() {
-            popup14.classList.remove("open-popup")
-        }
-
-        // image 15
-        let popup15 = document.getElementById("popup15");
-
-        function openPopup15() {
-            popup15.classList.add("open-popup")
-        }
-
-        function closePopup15() {
-            popup15.classList.remove("open-popup")
-        }
-    </script>
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/script.js"></script>
+    </div>
 
 </body>
-
 </html>

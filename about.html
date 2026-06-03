@@ -3,83 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>About — Peyton Wood</title>
 
     <link rel="stylesheet" href="/CSS/new_style.css">
-
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-
     <script src="https://kit.fontawesome.com/7240fc00d9.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Peyton Wood — Graphic designer and illustrator based in Orlando, FL. Specializing in branding, packaging, and UI/UX.">
 </head>
 
 <body>
-    <div id="wrapper">
-        <!-- header image -->
-        <div id="header_image">
-            <img src="images/header_image.png" alt="">
-            <h1>welcome to my portfolio</h1>
+    <header>
+        <div class="name">
+            <a href="index.html"><h1>Peyton Wood</h1></a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="index.html">Graphic Design</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-        <!-- header and nav -->
-        <header>
-            <div class="name">
-                <a href="index.html"><h1>Peyton Wood</h1></a>
-            </div>
+    <div class="mobile-nav-links" id="mobile-nav-links">
+        <button class="nav-close" id="nav-close">✕</button>
+        <a href="index.html">Graphic Design</a>
+        <a href="illustration.html">Illustration</a>
+        <a href="about.html">About</a>
+    </div>
 
-            <nav>
-                <ul>
-                    <li><a href="about.html">[About]</a></li>
-                    <li><a href="illustration.html">Illustration</a></li>
-                    <li><a href="index.html">Graphic Design</a></li>
-                </ul>
-            </nav>
+    <div class="clearfix"></div>
 
-            <!-- hamburger nav -->
-            <div class="mobile-nav">
-                <i class="fa-solid fa-bars fa-xl" style="color: #000000;" id="hamburger-menu"></i>
-                
-                <div class="clearfix"></div>
-
-                <div class="mobile-nav-links">
-                    <a href="index.html">GRAPHIC DESIGN</a>
-                    <a href="illustration.html">ILLUSTRATION</a>
-                    <a href="about.html">ABOUT</a>
-                </div>
-            </div>
-        </header>
-
-        <div class="clearfix"></div>
-
+    <div id="wrapper">
         <main>
             <div class="about">
+
                 <div class="about_img">
-                    <img src="images/about_img.png" alt="">
+                    <img src="images/about_img.png" alt="Illustrated portrait of Peyton Wood">
                 </div>
 
                 <div class="about_info">
-                    <h1>About Me</h1>
-                    <p>Hi, I'm Peyton! I'm a graphic designer and illustrator from Washington State, currently living in Florida. I graduated from Western Washington University with my BA in Design and a minor in Business Administration. I love creating fun and unique designs to meet business needs, adding a little bit of whimsy to every project I work on.</p>
-    
-                    <p>Contact me: <a href="mailto:peytonw.design@gmail.com">peytonw.design@gmail.com</a></p>
-    
-                    <p>Check out my resume <a href="documents/peytonwood_resume.pdf">here!</a></p>
+                    <h1>Hi there, I'm Peyton!</h1>
+
+                    <p>I'm a graphic designer and illustrator from Washington State, currently based in Orlando, Florida. I graduated from Western Washington University in 2024 with my BA in Design and a minor in Business Administration.</p>
+
+                    <p>I try to include a little bit of whimsy in every piece I create. From funky shapes to bright colors, every design should be bold and eye-catching. I currently work as a graphic designer in the cybersecurity sector, with experience across branding, print, web, UI/UX, and illustration.</p>
+
+                    <p>I'm sure you have questions, set me answer them!</p>
+
+                    <h2>"What tools do you use?"</h2>
+                    <p>Illustrator, InDesign, After Effects, Photoshop, Figma, and Procreate.</p>
+                    <p style="font-style: italic;">Bonus: I'm fluent in HTML and CSS, with some knowledge of JavaScript. I coded this portfolio!</p>
+
+                    <h2>"What field of design is your favorite?"</h2>
+                    <p>I love them all. But right now branding, print design, and illustration have my heart.</p>
+
+                    <h2>"What is your Tetris high score?"</h2>
+                    <p>Currently, it's 226,002. When I'm not designing I love puzzle games, crafting, updating this portfolio, and practicing my harmonica skills (apologies to my neighbors)!</p>
+
+                    <h2>"Where can I learn more about you?"</h2>
+                    <p>Reach me at <a href="mailto:peytonw.design@gmail.com">peytonw.design@gmail.com</a></p>
+                    <p>Check out my resume <a href="documents/peytonwood_resume.pdf">here</a> or find me on <a href="https://www.linkedin.com/in/peyton-wood/" target="_blank">LinkedIn</a>.</p>
+
                 </div>
-                
+
                 <div class="clearfix"></div>
             </div>
-            
         </main>
 
         <div class="clearfix"></div>
 
         <footer>
-            <p>Copyright &#169; 2023 Peyton Wood</p>
+            <p>Copyright &#169; <script>document.write(new Date().getFullYear());</script> Peyton Wood</p>
         </footer>
     </div>
 
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/script.js"></script>
-
 </body>
-
 </html>

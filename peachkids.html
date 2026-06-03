@@ -3,104 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PeachKids</title>
+    <title>Peach Kids</title>
 
     <link rel="stylesheet" href="/CSS/new_style.css">
 
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 
     <script src="https://kit.fontawesome.com/7240fc00d9.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Peyton Wood — Graphic designer and illustrator based in Orlando, FL. Specializing in branding, packaging, and UI/UX.">
+
 </head>
 
 <body>
-    <div id="wrapper">
-
-        <!-- header and nav -->
+     <!-- header and nav -->
         <header>
-            <div class="name">
-                <a href="index.html"><h1>Peyton Wood</h1></a>
-            </div>
+  <div class="name">
+    <a href="index.html"><h1>Peyton Wood</h1></a>
+  </div>
 
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="illustration.html">Illustration</a></li>
-                    <li><a href="index.html">Graphic Design</a></li>
-                </ul>
-            </nav>
+  <nav>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="illustration.html">Illustration</a></li>
+      <li><a href="index.html">Graphic Design</a></li>
+    </ul>
+  </nav>
 
-            <!-- hamburger nav -->
-            <div class="mobile-nav">
-                <i class="fa-solid fa-bars fa-xl" style="color: #000000;" id="hamburger-menu"></i>
-                
-                <div class="clearfix"></div>
+  <div class="mobile-nav">
+    <button class="hamburger" id="hamburger-menu" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
 
-                <div class="mobile-nav-links">
-                    <a href="index.html">GRAPHIC DESIGN</a>
-                    <a href="illustration.html">ILLUSTRATION</a>
-                    <a href="about.html">ABOUT</a>
-                </div>
-            </div>
-        </header>
+<div class="mobile-nav-links" id="mobile-nav-links">
+  <button class="nav-close" id="nav-close">✕</button>
+  <a href="index.html">Graphic Design</a>
+  <a href="illustration.html">Illustration</a>
+  <a href="about.html">About</a>
+</div>
 
         <div class="clearfix"></div>
+
+    <div id="wrapper">
+
+       
 
         <main>
             <div class="outer_grid">
                 <div class="project_text">
                     <h1>Peach Kids</h1>
-                    <p>In this packaging concept, I worked to create a fun and environmentally friendly package that showcases the shape of the soap inside. These soaps are designed in various shapes to fit comfortably in kids' small hands, and I aimed to highlight this aspect through the packaging.</p>
 
-                    <h2>Problem and Solution</h2>
-                    <p>The original packaging for this soap was a paper box with a lot of writing and a couple of abstract shapes reflecting the color and design of the soap. I really wanted the packaging to be appealing to kids, so I created some fun characters to be seen throughout the design, which could also be used in advertising later. These characters can also be seen in the coloring pages inside the box, which allow kids to reuse the packaging even after it's done, furthering Peach's sustainability initiative. The cutouts on the back of the box allow customers to see the soap itself, and allows them to smell the fun scents!</p>
+                        <div class="meta-strip">
+                        <span class="meta-item"><span class="meta-label">Role</span>Packaging Designer</span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-item"><span class="meta-label">Deliverables</span> Illustrations · Packaging</span>
+                        <span class="meta-divider">·</span>
+                        <span class="meta-item"><span class="meta-label">Year</span> 2023</span>
+                        </div>
 
-                    <h2>My Process</h2>
-                    <p>I started with brand research and moodboards. After this, I moved on to sketches, going from paper to digital. After multiple rounds of peer review and critique, I started on the final packaging design and dielines. After some print trials, allowing me to adjust the packaging for the best fit, I was able to construct the final boxes. These boxes can be put together without any glue or tape, allowing the paper to be fully recyclable.</p>
+                    <p>A sustainable packaging redesign for Peach Kids — a children's soap line built around fun shapes, bold characters, and zero-waste construction.</p>
+
+                    <p>Peach Kids makes soap designed specifically for children's small hands — shaped like stars, animals, and geometric forms that make bath time feel like play. The brief was to redesign the packaging to match the product's personality: fun, colorful, and environmentally conscious. The original box leaned heavily on text and abstract shapes. The redesign leads with character.</p>
                 </div>
 
                 <!-- inner grid contains images - float right, width: 2fr -->
                 <div class="inner_grid">
                     <!-- images should have bottom padding of 10px -->
-                    <img class="large_image" src="images/peach_floatingsoap.png" alt="" style="height: 75vh; object-fit: cover;">
-                    <!-- small images: width - 40%, padding left/right = 5px -->
-                    <img class="small_image_left" src="images/peach_dielines_front.png" alt="">
-                    <img class="small_image_right" src="images/peach_dielines_back.png" alt="">
+                    <img class="large_image" src="images/peach_floatingsoap.png" alt="">
+
+                    <img class="cutout" src="images/peach_cirtussplash_sticker.png" alt="cup" style="top: 600px; right: 3vw; width: 20vw;">
+
+                    <img class="small_image_left lightbox-trigger" src="images/peach_dielines_front.png" alt="">
+                    <img class="small_image_right lightbox-trigger" src="images/peach_dielines_back.png" alt="">
 
                     <div class="clearfix"></div>
 
-                    <img class="large_image" src="images/peach_soapontile.png" alt="" style="height: 65vh; object-fit: cover;">
+                    <img class="cutout" src="images/peach_honeybuzz_sticker.png" alt="cup" style="top: 1100px; right: 37vw; width: 20vw;">
+
+                    <img class="large_image lightbox-trigger" src="images/peach_soapontile.png" alt="">
+
+                    <h2 style="text-align: center;">Brand colors</h2>
+
+                    <p>The palette needed to work hard across multiple soap variants while keeping the system cohesive. Each color is bold enough to read instantly on shelf but soft enough to feel safe and approachable for a children's product. The overall palette leans warm and playful — more toy store than pharmacy.</p>
+
+                            <div class="palette-wrap">
+
+                            <div class="swatch-card" style="width: 31.33%;">
+                                <div class="swatch" style="background: #8B3795;" >
+                                <div class="swatch-info">
+                                    <span>Groovy Grape</span>
+                                    <span>#8B3795</span>
+                                </div>
+                                </div>
+                                <span class="swatch-name"></span>
+                            </div>
+
+                            <div class="swatch-card" style="width: 31.33%;">
+                                <div class="swatch" style="background: #F3D734;">
+                                <div class="swatch-info">
+                                    <span>Honey Yellow</span>
+                                    <span>#F3D734</span>
+                                </div>
+                                </div>
+                                <span class="swatch-name"></span>
+                            </div>
+
+                            <div class="swatch-card" style="width: 31.33%;">
+                                <div class="swatch" style="background: #018BBA;" >
+                                <div class="swatch-info">
+                                    <span>Teal Splash</span>
+                                    <span>#018BBA</span>
+                                </div>
+                                </div>
+                                <span class="swatch-name"></span>
+                            </div>
+
+                            <!-- repeat for each color -->
+
+                            </div>
+
+                    <h2 style="text-align: center;">Character Illustrations</h2>
+
+                    <p>The packaging needed something kids could connect with immediately. Rather than relying on the product photography alone, a cast of original characters was developed to live across the packaging, giving each flavor and shape its own personality. These characters are designed to extend beyond the box — they appear in coloring pages tucked inside the packaging, giving kids a reason to interact with it long after the soap is gone.</p>
+
+                    <img class="large_image lightbox-trigger" src="images/peach_characters.png" alt="">
+
+                    <h2 style="text-align: center;">Dielines</h2>
+
+                    <p>One of the core constraints of this project was sustainability. The final packaging was engineered to assemble without glue or tape — every fold is structural, meaning the entire box can be recycled as a single material. The cutouts on the back panel serve double duty: they let customers see the soap shape and catch the scent before buying, while keeping the packaging open and airy rather than a sealed black box.</p>
+
+                    <!-- small images: width - 40%, padding left/right = 5px -->
+
+                    <img class="large_image lightbox-trigger" src="images/peach_groovygrape_front.jpg" alt="">
+
+                    <img class="large_image lightbox-trigger" src="images/peach_groovygrape_back.jpg" alt="">
+
+                    <img class="large_image lightbox-trigger" src="images/peach_citrussplash_front.jpg" alt="">
+
+                    <img class="large_image lightbox-trigger" src="images/peach_citrussplash_back.jpg" alt="">
+
+                    <img class="large_image lightbox-trigger" src="images/peach_honeybuzz_front.jpg" alt="">
+
+                    <img class="large_image lightbox-trigger" src="images/peach_honeybuzz_back.jpg" alt="">
+
+                    <p>The final boxes were physically constructed and presented as a complete packaging system. The no-glue construction means every box is fully recyclable — a small detail that reflects a larger commitment to designing with the product's full lifecycle in mind.</p>
+
+                    
                 </div>
+
             </div>
+            
+            
         </main>
 
         <div class="mobile">
-            <h1>Peach Kids</h1>
-            <img class="large_image" src="images/peach_floatingsoap.png" alt="" style="object-fit: cover;">
-            <p>In this packaging concept, I worked to create a fun and environmentally friendly package that showcases the shape of the soap inside. These soaps are designed in various shapes to fit comfortably in kids' small hands, and I aimed to highlight this aspect through the packaging.</p>
+        <h1>Peach Kids</h1>
 
-            <img class="small_image_left" src="images/peach_dielines_front.png" alt="">
-            <img class="small_image_right" src="images/peach_dielines_back.png" alt="">
+        <div class="meta-strip">
+            <span class="meta-item"><span class="meta-label">Role</span> Packaging Designer</span>
+            <span class="meta-divider">·</span>
+            <span class="meta-item"><span class="meta-label">Deliverables</span> Illustrations · Packaging</span>
+            <span class="meta-divider">·</span>
+            <span class="meta-item"><span class="meta-label">Year</span> 2023</span>
+        </div>
 
-            <div class="clearfix"></div>
+        <p>A sustainable packaging redesign for Peach Kids — a children's soap line built around fun shapes, bold characters, and zero-waste construction.</p>
 
-            <h2>Problem and Solution</h2>
-            <p>The original packaging for this soap was a paper box with a lot of writing and a couple of abstract shapes reflecting the color and design of the soap. I really wanted the packaging to be appealing to kids, so I created some fun characters to be seen throughout the design, which could also be used in advertising later. These characters can also be seen in the coloring pages inside the box, which allow kids to reuse the packaging even after it's done, furthering Peach's sustainability initiative. The cutouts on the back of the box allow customers to see the soap itself, and allows them to smell the fun scents!</p>
+        <p>Peach Kids makes soap designed specifically for children's small hands — shaped like stars, animals, and geometric forms that make bath time feel like play. The brief was to redesign the packaging to match the product's personality: fun, colorful, and environmentally conscious. The original box leaned heavily on text and abstract shapes. The redesign leads with character.</p>
 
-            <img class="large_image" src="images/peach_soapontile.png" alt="" style="object-fit: cover;">
+        <img class="large_image lightbox-trigger" src="images/peach_floatingsoap.png" alt="">
 
-            <h2>My Process</h2>
-            <p>I started with brand research and moodboards. After this, I moved on to sketches, going from paper to digital. After multiple rounds of peer review and critique, I started on the final packaging design and dielines. After some print trials, allowing me to adjust the packaging for the best fit, I was able to construct the final boxes. These boxes can be put together without any glue or tape, allowing the paper to be fully recyclable.</p>
+        <img class="large_image lightbox-trigger" src="images/peach_soapontile.png" alt="">
+
+        <h2>Brand Colors</h2>
+
+        <p>The palette needed to work hard across multiple soap variants while keeping the system cohesive. Each color is bold enough to read instantly on shelf but soft enough to feel safe and approachable for a children's product. The overall palette leans warm and playful — more toy store than pharmacy.</p>
+
+        <div class="palette-wrap">
+            <div class="swatch-card">
+            <div class="swatch" style="background: #8B3795;">
+                <div class="swatch-info">
+                <span>Groovy Grape</span>
+                <span>#8B3795</span>
+                </div>
+            </div>
+            </div>
+            <div class="swatch-card">
+            <div class="swatch" style="background: #F3D734;">
+                <div class="swatch-info">
+                <span>Honey Yellow</span>
+                <span>#F3D734</span>
+                </div>
+            </div>
+            </div>
+            <div class="swatch-card">
+            <div class="swatch" style="background: #018BBA;">
+                <div class="swatch-info">
+                <span>Teal Splash</span>
+                <span>#018BBA</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <h2>Character Illustrations</h2>
+
+        <p>A cast of original characters was developed to give each soap variant its own personality — something kids could connect with immediately. These characters extend beyond the box, appearing in coloring pages tucked inside the packaging so kids can interact with it long after the soap is gone.</p>
+
+        <img class="large_image lightbox-trigger" src="images/peach_characters.png" alt="">
+
+        <h2>Dielines</h2>
+
+        <p>The final packaging was engineered to assemble without glue or tape — every fold is structural, meaning the entire box can be recycled as a single material. The cutouts on the back panel let customers see the soap shape and catch the scent before buying.</p>
+
+        <div class="mobile-two-col">
+            <img class="lightbox-trigger" src="images/peach_dielines_front.png" alt="">
+            <img class="lightbox-trigger" src="images/peach_dielines_back.png" alt="">
+        </div>
+
+        <div class="mobile-two-col">
+            <img class="lightbox-trigger" src="images/peach_groovygrape_front.jpg" alt="">
+            <img class="lightbox-trigger" src="images/peach_groovygrape_back.jpg" alt="">
+        </div>
+
+        <div class="mobile-two-col">
+            <img class="lightbox-trigger" src="images/peach_citrussplash_front.jpg" alt="">
+            <img class="lightbox-trigger" src="images/peach_citrussplash_back.jpg" alt="">
+        </div>
+
+        <div class="mobile-two-col">
+            <img class="lightbox-trigger" src="images/peach_honeybuzz_front.jpg" alt="">
+            <img class="lightbox-trigger" src="images/peach_honeybuzz_back.jpg" alt="">
+        </div>
+
+        <p class="closing-line">The final boxes were physically constructed and presented as a complete packaging system. The no-glue construction means every box is fully recyclable — a small detail that reflects a larger commitment to designing with the product's full lifecycle in mind.</p>
         </div>
 
         <div class="clearfix"></div>
 
         <footer>
-            <p>Copyright &#169; 2023 Peyton Wood</p>
+            <p>Copyright &#169; <script>document.write(new Date().getFullYear());</script> Peyton Wood</p>
         </footer>
 
         <script src="js/jquery-3.7.1.js"></script>
         <script src="js/script.js"></script>
     </div>
+
 </body>
 
 </html>
