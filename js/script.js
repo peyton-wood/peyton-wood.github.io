@@ -131,6 +131,7 @@ if (window.matchMedia('(pointer: fine)').matches) {
 
 // enhance project links with category tags
 const projects = [
+  { selector: 'a[href="backnine.html"]', category: 'Branding' },
   { selector: 'a[href="bearlyawake.html"]', category: 'Branding' },
   { selector: 'a[href="modesto.html"]', category: 'Print' },
   { selector: 'a[href="humm.html"]', category: 'Packaging' },
@@ -139,7 +140,6 @@ const projects = [
   { selector: 'a[href="tandem.html"]', category: 'UI/UX' },
   { selector: 'a[href="endfair.html"]', category: 'Print' },
   { selector: 'a[href="unsplash.html"]', category: 'UI/UX' },
-  { selector: 'a[href="plantpositivty.html"]', category: 'Print' },
 ];
 
 projects.forEach(({ selector, category }) => {

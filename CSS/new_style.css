@@ -1210,6 +1210,7 @@ main .outer_grid .inner_grid .cutout {
   main .grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    padding-top: 50px;
   }
 
   main .grid .project_link {
